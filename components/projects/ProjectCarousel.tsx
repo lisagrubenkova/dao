@@ -135,7 +135,7 @@ function ArrowButton({
       type="button"
       onClick={onClick}
       aria-label={direction === 'left' ? 'Previous' : 'Next'}
-      className="shrink-0 mx-2 md:mx-4 flex items-center justify-center w-10 h-10 md:w-14 md:h-14 rounded-full text-neutral-700 hover:text-neutral-900 transition-colors"
+      className="shrink-0 mx-1 md:mx-1 flex items-center justify-center w-10 h-10 md:w-14 md:h-14 rounded-full text-neutral-700 hover:text-neutral-900 transition-colors"
       style={glassStyle}
     >
       <svg

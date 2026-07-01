@@ -60,11 +60,11 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.4, ease: 'easeOut' }}
             className="flex flex-col items-center w-full"
           >
-            <h1 className="text-hero font-sans font-medium lowercase text-center">
+            <h1 className="text-hero font-sans font-medium lowercase text-center whitespace-pre-line">
               {t('title')}
             </h1>
             {subtitle && (
-              <p className="text-mono-md font-mono text-center mt-[clamp(16px,2vw,32px)] max-w-2xl">
+              <p className="text-mono-md font-mono text-center mt-[clamp(12px, 5.2px + 1.81vw, 40px)] max-w-2xl mt-[clamp(12px,5.2px+1.81vw,40px)]">
                 {subtitle}
               </p>
             )}
