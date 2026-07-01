@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "title": "not another event.\n a reason to gather",
+    "subtitle": "dao creates thoughtful brand experiences — from summits and forums to private dinners, public programmes and partnerships"
+  },
+  "menu": {
+    "about": "about",
+    "algorithm": "process",
+    "projects": "projects",
+    "contact": "contact",
+    "portfolio": "download portfolio"
+  },
+  "sections": {
+    "projects": "Projects",
+    "team": "Producers team",
+    "principles": "Principles",
+    "algorithm": "Process",
+    "contact": "Let's talk!"
+  },
+  "about": {
+    "intro": "A reason to gather is curated.\nWe connect the goal, audience, content and people — turning an idea into an experience with purpose and structure.",
+    "pillars": [
+      { "marker": "/", "title": "Research", "subtitle": "we understand the context and the people we need to reach" },
+      { "marker": "//", "title": "Programme", "subtitle": "we turn the idea into a clear structure" },
+      { "marker": "///", "title": "Delivery", "subtitle": "we align speakers, partners and production around one direction" }
+    ],
+    "outro": ""
+  },
+  "projectDetails": {
+    "task": "Objective",
+    "result": "Impact & outcomes"
+  },
+  "projects": {
+    "viewProject": "explore"
+  },
+  "team": {
+    "title": "What we do",
+    "points": [
+      "we turn client goals into compelling event ideas",
+      "we pair curatorial thinking with bold execution",
+      "we shape the content of business, educational and public-facing events to help brands stand out"
+    ]
+  },
+  "principles": {
+    "title": "The philosophy",
+    "items": [
+      "Partnership built around clear goals and mutual trust",
+      "research first before the idea, we study the room",
+      "Projects shaped around the people they need to reach",
+      "Tested formats, fresh ideas, clear execution"
+    ]
+  },
+  "algorithm": {
+    "title": "How we work",
+    "steps": [
+      {
+        "title": "Research",
+        "description": "we define the brief, study the audience and run expert interviews"
+      },
+      {
+        "title": "Market validation",
+        "description": "we test the programme concept with industry experts and audience representatives"
+      },
+      {
+        "title": "Programme design",
+        "description": "we shape the programme architecture, key messages and session formats"
+      },
+      {
+        "title": "Talent outreach",
+        "description": "engaging and onboarding speakers and moderators"
+      },
+      {
+        "title": "Content development",
+        "description": "we work with speakers and moderators on session narratives, scripts and supporting materials"
+      },
+      {
+        "title": "On-site delivery",
+        "description": "delivering programme formats on site with full speaker and moderator management"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's shape the narrative together!",
+    "paragraph1": "We believe the best cultural and business events happen when a brand's values meet a clear understanding of its audience.",
+    "paragraph2": "Bring us an idea, a brief or an early direction — we can help shape the concept, build the programme and lead the project through to delivery.",
+    "email": "hello@daospacedao.com"
+  },
+  "footer": {
+    "tagline": "A boutique team turning brand goals into formats that move business forward",
+    "downloadPortfolio": "download portfolio",
+    "nav": {
+      "algorithm": "how we work",
+      "projects": "projects",
+      "portfolio": "portfolio",
+      "contacts": "contacts"
+    },
+    "team": [
+      { "name": "Daria Kolganova", "phone": "+79852217967", "telegram": "@darya_kolganova" },
+      { "name": "Yulia Gerasimenko", "phone": "+79850581797", "telegram": "@mirandajulia" }
+    ],
+    "year": "2026, dao team"
+  }
+}
