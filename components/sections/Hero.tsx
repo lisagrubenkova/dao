@@ -64,7 +64,7 @@ export function Hero() {
               {t('title')}
             </h1>
             {subtitle && (
-              <p className="text-mono-md font-mono text-center mt-[clamp(12px, 5.2px + 1.81vw, 40px)] max-w-2xl mt-[clamp(12px,5.2px+1.81vw,40px)]">
+              <p className="text-mono-md font-mono text-center max-w-2xl mt-[clamp(12px,5.2px+1.81vw,40px)]" style={{ fontSize: 'clamp(12px, 5.2px + 1.81vw, 40px)' }}>
                 {subtitle}
               </p>
             )}
