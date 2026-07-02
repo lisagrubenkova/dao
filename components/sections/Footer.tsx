@@ -12,14 +12,14 @@ export function Footer() {
   const locale = useLocale();
   const team = t.raw('team') as TeamMember[];
 
+  const logoSrc = locale === 'en' ? '/logo-en.svg' : '/logo-ru.svg';
+  const portfolioSrc = locale === 'en' ? '/dao-portfolio-en.pdf' : '/dao-portfolio-ru.pdf';
   const navItems: NavItem[] = [
     { key: 'algorithm', label: t('nav.algorithm'), href: '#algorithm' },
     { key: 'projects', label: t('nav.projects'), href: '#projects' },
-    { key: 'portfolio', label: t('nav.portfolio'), href: '#' },
+    { key: 'portfolio', label: t('nav.portfolio'), href: portfolioSrc },
     { key: 'contacts', label: t('nav.contacts'), href: '#contact' },
   ];
-
-  const logoSrc = locale === 'en' ? '/logo-en.svg' : '/logo-ru.svg';
 
   return (
     <footer className="bg-bg-alt py-section-y px-section-x">
@@ -39,26 +39,37 @@ export function Footer() {
         <div className="lg:col-span-5 flex flex-col gap-gap-md">
           <nav className="flex flex-col gap-2">
             {navItems.map((item) => (
-              <Link
-                key={item.key}
-                href={item.href}
-                className="font-mono text-mono-md uppercase text-ink hover:text-accent transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
+                  item.key === 'portfolio' ? (
+                      <a
+                        key={item.key}
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-mono text-mono-md uppercase text-ink hover:text-accent transition-colors"
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                    <Link
+                      key={item.key}
+                      href={item.href}
+                      className="font-mono text-mono-md uppercase text-ink hover:text-accent transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  )))}
           </nav>
 
           <p className="font-mono text-mono-sm whitespace-pre-line">
             {t('tagline')}
           </p>
 
-          <button
-            type="button"
+          <a  href={portfolioSrc}
+            download={locale === 'en' ? 'dao pitchdeck.pdf' : 'dao портфолио.pdf'}
             className="self-start rounded-full bg-bg px-6 py-3 font-mono text-mono-sm text-muted hover:text-ink transition-colors"
           >
             {t('downloadPortfolio')}
-          </button>
+          </a>
         </div>
 
         {/* Нижняя плашка с контактами и годом */}
