@@ -12,7 +12,7 @@ export function AnimatedRow({ text }: Props) {
         <div className="w-1.5 h-1.5 rounded-full bg-ink" />
       </div>
 
-      <p className="font-mono text-mono-md max-w-2xl">{text}</p>
+      <p className="font-mono max-w-[210px] md:max-w-2xl" style={{ fontSize: 'clamp(10px, 2.72px + 1.942vw, 40px)' }}>{text}</p>
     </div>
   );
 }
