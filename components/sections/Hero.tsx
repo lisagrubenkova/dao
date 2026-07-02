@@ -5,14 +5,20 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Logo } from '@/components/ui/Logo';
 import { AnimatedLine } from '@/components/ui/AnimatedLine';
+import { useIntro } from '@/context/IntroContext';
 
 export function Hero() {
   const t = useTranslations('hero');
   const tMenu = useTranslations('menu');
   const subtitle = t('subtitle');
 
+  const { setIntroDone } = useIntro();
   const [phase, setPhase] = useState<'intro' | 'content'>('intro');
-
+  
+  const goToContent = () => {
+    setPhase('content');
+    setIntroDone(true);
+  };
   useEffect(() => {
     const timer = setTimeout(() => setPhase('content'), 2500);
     return () => clearTimeout(timer);
@@ -26,7 +32,7 @@ export function Hero() {
   return (
     <section
       className="relative h-screen bg-bg overflow-hidden"
-      onClick={() => isIntro && setPhase('content')}
+      onClick={() => isIntro && goToContent()}
     >
       {/* ===== Intro: логотип по центру ===== */}
       {isIntro && (

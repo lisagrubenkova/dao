@@ -66,7 +66,14 @@ export function Footer() {
 
           <a  href={portfolioSrc}
             download={locale === 'en' ? 'dao pitchdeck.pdf' : 'dao портфолио.pdf'}
-            className="self-start rounded-full bg-bg px-6 py-3 font-mono text-mono-sm text-muted hover:text-ink transition-colors"
+            className="glass-button self-start inline-flex items-center justify-center
+             w-[80.86px] h-[18.36px] rounded-[16.88px] text-[7px]
+             md:w-[273px] md:h-[62px] md:rounded-[57px] md:text-[24px]
+             font-sans font-normal leading-none lowercase
+             text-[#B7B7B7] hover:text-white
+             backdrop-blur-[21px]
+            shadow-[0px_8px_20px_-6px_rgba(0,0,0,0.12),0px_2px_4px_rgba(0,0,0,0.08),inset_0px_1px_1px_rgba(255,255,255,0.9),inset_0px_-2px_4px_rgba(0,0,0,0.04)]
+             transition-colors"
           >
             {t('downloadPortfolio')}
           </a>
