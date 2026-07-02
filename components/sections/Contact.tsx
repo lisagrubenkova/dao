@@ -36,7 +36,7 @@ export function Contact() {
         </div>
 
         {/* Email + copy справа сверху */}
-        <div className="lg:col-span-5 flex lg:justify-end lg:items-start lg:pt-6">
+        <div className="order-last lg:order-none lg:col-span-5 flex lg:justify-end lg:items-start lg:pt-6">
           <div
             className="inline-flex items-center gap-3 text-mail"
             style={{ fontSize: fluidEmail }}
@@ -70,12 +70,14 @@ export function Contact() {
 
         {/* Два абзаца под заголовком */}
         <div className="lg:col-span-4 lg:col-start-1 lg:mt-gap-md">
-          <p className="font-mono" style={{ fontSize: fluidParagraph, lineHeight: 1.5 }}>
+          <p  className="font-mono leading-none lg:leading-[1.5]"
+  style={{ fontSize: fluidParagraph }}>
             {t('paragraph1')}
           </p>
         </div>
         <div className="lg:col-span-4 lg:mt-gap-md">
-          <p className="font-mono" style={{ fontSize: fluidParagraph, lineHeight: 1.5 }}>
+          <p  className="font-mono leading-none lg:leading-[1.5]"
+  style={{ fontSize: fluidParagraph }}>
             {t('paragraph2')}
           </p>
         </div>
