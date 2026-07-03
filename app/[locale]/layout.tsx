@@ -28,7 +28,6 @@ export default async function LocaleLayout({
       <body className="font-sans bg-bg text-black antialiased">
         <IntroProvider>
           <NextIntlClientProvider>
-            <LanguageSwitcher />
             {children}
           </NextIntlClientProvider>
         </IntroProvider>

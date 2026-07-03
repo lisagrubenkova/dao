@@ -19,7 +19,7 @@
   --text-display: 120px;
   --text-display--line-height: 0.81;
 
-  --text-hero: clamp(24px, 6.25vw, 120px);
+  --text-hero: min(clamp(28px, 7vw, 120px), 12vh);
   --text-hero--line-height: 0.95;
 
   --text-h1: 96px;
