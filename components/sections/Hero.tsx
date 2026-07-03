@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Logo } from '@/components/ui/Logo';
 import { AnimatedLine } from '@/components/ui/AnimatedLine';
 import { AnimatedRow } from '@/components/ui/AnimatedRow';
@@ -14,6 +14,7 @@ export function Hero() {
   const t = useTranslations('hero');
   const tMenu = useTranslations('menu');
   const subtitle = t('subtitle');
+  const locale = useLocale();
 
   const { setIntroDone } = useIntro();
   const [phase, setPhase] = useState<'intro' | 'content'>('intro');
@@ -31,13 +32,13 @@ export function Hero() {
 
   const isIntro = phase === 'intro';
   const logoTransition = { duration: 1.1, ease: [0.22, 1, 0.36, 1] as const };
-
+  const portfolioSrc = locale === 'en' ? '/dao-portfolio-en.pdf' : '/dao-portfolio-ru.pdf';
   const menuItems = [
     { label: tMenu('about'), href: '#about' },
     { label: tMenu('algorithm'), href: '#algorithm' },
     { label: tMenu('projects'), href: '#projects' },
     { label: tMenu('contact'), href: '#contact' },
-    { label: tMenu('portfolio'), href: '#portfolio' },
+    { label: tMenu('portfolio'), href: portfolioSrc },
   ];
 
   return (
