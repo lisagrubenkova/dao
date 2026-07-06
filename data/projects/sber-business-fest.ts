@@ -7,15 +7,15 @@ export const sberBusinessFest: Project = {
   thumbnail: '/projects/sber-business-fest/thumb.jpg',
   cover: '/projects/sber-business-fest/cover.jpg',
   title: { ru: 'Сбер Бизнес-Фест 2024', en: 'Sber Business FEST 2024' },
-  partnerLogo: '/logos/sber.svg',
+  partnerLogo: [{ src: '/logos/sber.svg', width: 256, height: 70 }],
   description: {
     ru: 'флагманский фестиваль для предпринимателей и тех, кто хочет начать своё дело',
     en: 'A multi-city offline festival by SberBusiness, designed to support entrepreneurs with practical business content, founder cases, mentoring, networking and local business connections',
   },
   stats: [
-    { value: '10000', label: { ru: 'участников офлайн и онлайн', en: 'hybrid attendees' } },
-    { value: '1000+', label: { ru: 'гостей на площадке в каждом городе', en: 'on-site attendees per city' } },
-    { value: '11', label: { ru: 'городов России', en: 'cities' } },
+    { value: '10000', label: { ru: 'участников офлайн и онлайн', en: 'hybrid attendees' }, heightPx: 453 },
+    { value: '1000+', label: { ru: 'гостей на площадке в каждом городе', en: 'on-site attendees per city' }, heightPx: 709 },
+    { value: '11', label: { ru: 'городов России', en: 'cities' }, heightPx: 539 },
   ],
   cities: { ru: '11 городов', en: '11 cities' },
   format: { ru: 'офлайн', en: 'offline' },
@@ -37,7 +37,7 @@ export const sberBusinessFest: Project = {
     { src: '/projects/sber-business-fest/6.jpg', credit: { ru: 'фото: Максим Писаревский', en: 'ph: Maxim Pisarevsky' } },
   ],
   partners: [
-    { logo: '/logos/bsb.svg', name: 'Black Star Burger', url: '' },
-    { logo: '/logos/2GIS.svg', name: '2GIS', url: 'https://2gis.ru' },
+    { logo: '/logos/bsb.svg', name: 'Black Star Burger', url: '', width: 188, height: 188 },
+    { logo: '/logos/2GIS.svg', name: '2GIS', url: 'https://2gis.ru', width: 213, height: 110 },
   ],
 };

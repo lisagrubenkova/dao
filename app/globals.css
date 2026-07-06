@@ -102,3 +102,70 @@ body {
           mask-composite: exclude;
   pointer-events: none;
 }
+
+@layer components {
+  /* Базовое стекло из макета: border (angular gradient) + backdrop blur + inner shadow */
+.glass {
+  position: relative; border-radius: 65px; color:#fff;
+  backdrop-filter: blur(10px);
+  box-shadow:
+    inset 1.38px 1.28px 4.96px rgba(255,255,255,0.15),
+    -3px 16px 33.9px -12px rgba(0,0,0,0.15);
+}
+.glass::after {
+  content:""; position:absolute; inset:-1px;
+  border-radius: inherit; padding:1px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.50), rgba(255,255,255,0));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+}
+
+.glass-stat {
+  position: relative;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    inset 1.38px 1.28px 4.96px rgba(255,255,255,0.15),
+    -9px -4px 48.4px -12px rgba(0,0,0,0.15);
+}
+.glass-stat::after {
+  content:""; position:absolute; inset:0;
+  border-radius: inherit; padding:1px;
+  background: linear-gradient(to bottom,
+    rgba(255,255,255,0.11),
+    rgba(255,255,255,0.018));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+
+.glass-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; border: 0; background: none;
+  line-height: 0; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity 0.15s ease;
+}
+.glass-arrow:hover  { opacity: 0.85; }
+.glass-arrow:active { opacity: 0.6; }
+
+.glass-arrow img { display: block; width: var(--w); height: var(--h); }
+
+/* мобилка */
+.glass-arrow--gallery  { --w: 6px;  --h: 10px; }
+.glass-arrow--carousel { --w: 17px; --h: 31px; }
+
+.glass-arrow--carousel img {
+  filter: brightness(0.25) drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+}
+/* десктоп */
+@media (min-width: 768px) {
+  .glass-arrow--gallery  { --w: 28px; --h: 50px; }
+  .glass-arrow--carousel { --w: 35px; --h: 62px; }
+}

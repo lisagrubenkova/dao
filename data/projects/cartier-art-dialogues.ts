@@ -7,7 +7,7 @@ export const cartierArtDialogues: Project = {
   thumbnail: '/projects/cartier-art-dialogues/thumb.jpg',
   cover: '/projects/cartier-art-dialogues/cover.jpg',
   title: { ru: 'Cartier art dialogues', en: 'Cartier art dialogues' },
-  partnerLogo: '/logos/cartier-hermitage.svg',
+  partnerLogo: [{ src: '/logos/cartier-hermitage.svg', width: 441, height: 161 }],
   description: {
     ru: 'Публичная программа в Эрмитаже',
     en: 'Public Programming / The State Hermitage Museum',
@@ -19,6 +19,7 @@ export const cartierArtDialogues: Project = {
         ru: 'ключевых фигур музейного, художественного и музыкального мира',
         en: 'global cultural leaders (museum directors, artists, musicians)',
       },
+      heightPx: 453,
     },
   ],
   cities: { ru: 'Санкт-П.', en: 'St. Petersburg' },
@@ -82,11 +83,11 @@ export const cartierArtDialogues: Project = {
     },
   ],
   partners: [
-    { logo: '/logos/artribune.svg', name: 'Artribune', url: 'https://www.artribune.com' },
-    { logo: '/logos/artory.svg', name: 'Artory', url: 'https://www.artory.com' },
-    { logo: '/logos/musicaeterna.svg', name: 'musicAeterna', url: 'https://musicaeterna.org' },
-    { logo: '/logos/triennale.svg', name: 'Triennale Milano', url: 'https://triennale.org' },
-    { logo: '/logos/fondation-cartier.svg', name: 'Fondation Cartier', url: 'https://www.fondationcartier.com' },
+    { logo: '/logos/artribune.svg', name: 'Artribune', url: 'https://www.artribune.com', width: 218, height: 50 },
+    { logo: '/logos/artory.svg', name: 'Artory', url: 'https://www.artory.com', width: 225, height: 34 },
+    { logo: '/logos/musicaeterna.svg', name: 'musicAeterna', url: 'https://musicaeterna.org', width: 159, height: 159 },
+    { logo: '/logos/triennale.svg', name: 'Triennale Milano', url: 'https://triennale.org', width: 249, height: 78 },
+    { logo: '/logos/fondation-cartier.svg', name: 'Fondation Cartier', url: 'https://www.fondationcartier.com', width: 415, height: 91 },
   ],
   gallery: [
     { src: '/projects/cartier-art-dialogues/1.jpg', credit: { ru: 'фото: dao team', en: 'ph: dao team' } },

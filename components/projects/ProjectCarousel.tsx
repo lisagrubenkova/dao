@@ -5,6 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import type { Project } from '@/data/projects';
+import { GlassArrow } from '../ui/GlassArrow';
 
 type Props = {
   projects: Project[];
@@ -16,14 +17,6 @@ const fluidTitle = 'clamp(18px, 0.75rem + 0.83vw, 32px)';
 const fluidMeta = 'clamp(13px, 0.6rem + 0.6vw, 24px)';
 const cardWidth = 'clamp(320px, 17.36rem + 15.375vw, 566px)';
 const cardGap = 'clamp(16px, 1.5vw, 32px)';
-
-// Стеклянный стиль — переиспользуем
-const glassStyle: React.CSSProperties = {
-  background: 'rgba(255, 255, 255, 0.15)',
-  backdropFilter: 'blur(12px)',
-  WebkitBackdropFilter: 'blur(12px)',
-  border: '1px solid rgba(255, 255, 255, 0.25)',
-};
 
 export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
   const locale = useLocale() as 'ru' | 'en';
@@ -51,7 +44,7 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
 
   return (
     <div className="relative flex items-center">
-      <ArrowButton direction="left" onClick={scrollPrev} />
+  <GlassArrow direction="left"  place="carousel" onClick={scrollPrev} />
 
       <div ref={emblaRef} className="overflow-hidden flex-1 min-w-0">
         <div className="flex">
@@ -76,8 +69,8 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
 
                   {p.top && (
                     <span
-                      className="absolute top-4 left-4 text-white font-mono rounded-full px-4 py-1.5 uppercase"
-                      style={{ ...glassStyle, fontSize: fluidMeta }}
+                      className="glass absolute top-4 left-4 text-white font-sans rounded-full px-4 py-1.5 uppercase"
+                      style={{ fontSize: fluidMeta }}
                     >
                       TOP
                     </span>
@@ -89,8 +82,8 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
                       e.stopPropagation();
                       handleView(p.id);
                     }}
-                    className="absolute bottom-4 right-4 text-white font-mono rounded-full px-5 py-2 transition-colors hover:bg-white/25 cursor-pointer"
-                    style={{ ...glassStyle, fontSize: fluidMeta }}
+                    className="glass absolute bottom-4 right-4 text-white font-mono rounded-full px-5 py-2  transition-colors hover:bg-white/25 cursor-pointer"
+                    style={{ fontSize: fluidMeta }}
                   >
                     {t('viewProject')}
                   </button>
@@ -118,35 +111,7 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
         </div>
       </div>
 
-      <ArrowButton direction="right" onClick={scrollNext} />
+  <GlassArrow direction="right" place="carousel" onClick={scrollNext} />
     </div>
-  );
-}
-
-function ArrowButton({
-  direction,
-  onClick,
-}: {
-  direction: 'left' | 'right';
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-label={direction === 'left' ? 'Previous' : 'Next'}
-      className="shrink-0 mx-1 md:mx-1 flex items-center justify-center w-10 h-10 md:w-14 md:h-14 rounded-full text-neutral-700 hover:text-neutral-900 transition-colors"
-      style={glassStyle}
-    >
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 32 32"
-        fill="none"
-        style={{ transform: direction === 'left' ? 'rotate(180deg)' : undefined }}
-      >
-        <path d="M12 8l8 8-8 8" stroke="currentColor" strokeWidth="1.5" fill="none" />
-      </svg>
-    </button>
   );
 }

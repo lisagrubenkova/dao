@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { GalleryPhoto } from '@/data/types';
+import { GlassArrow } from '../ui/GlassArrow';
 
 type Props = {
   photos: GalleryPhoto[];
@@ -46,21 +47,11 @@ export function ProjectGallery({ photos, locale }: Props) {
         </AnimatePresence>
 
         {photos.length > 1 && (
-          <>
-            <button
-              onClick={prev}
-              aria-label="prev"
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-bg/80 hover:bg-bg transition-colors"
-            >
-              ‹
-            </button>
-            <button
-              onClick={next}
-              aria-label="next"
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-bg/80 hover:bg-bg transition-colors"
-            >
-              ›
-            </button>
+           <>
+          <GlassArrow direction="left"  place="gallery" onClick={prev}
+            className="absolute left-4 top-1/2 -translate-y-1/2" aria-label="prev" />
+          <GlassArrow direction="right" place="gallery" onClick={next}
+            className="absolute right-4 top-1/2 -translate-y-1/2" aria-label="next" />
           </>
         )}
       </div>
@@ -69,7 +60,7 @@ export function ProjectGallery({ photos, locale }: Props) {
         className="font-mono text-muted text-right mt-2"
         style={{ fontSize: fluidCredit }}
       >
-        {photo.credit[locale]}
+        {photo.credit ? photo.credit[locale] : null}
       </p>
     </div>
   );

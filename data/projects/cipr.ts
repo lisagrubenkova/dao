@@ -7,21 +7,22 @@ export const cipr: Project = {
   thumbnail: '/projects/cipr/thumb.jpg',
   cover: '/projects/cipr/cover.jpg',
   title: { ru: 'ЦИПР', en: 'Digital Industry of Industrial Russia' },
-  partnerLogo: '/logos/cipr-darkside.svg',
+  partnerLogo: [{ src: '/logos/cipr-darkside.svg', width: 643, height: 89 }],
   description: {
     ru: 'Форум о цифровой экономике и промышленной трансформации для государства и бизнеса',
     en: 'The definitive B2B forum focusing on the digital economy and industrial transformation',
   },
   stats: [
-    { value: '6000', label: { ru: 'участников', en: 'attendees' } },
-    { value: '500+', label: { ru: 'спикеров', en: 'speakers' } },
-    { value: '70+', label: { ru: 'сессий деловой программы', en: 'programming sessions' } },
+    { value: '6000', label: { ru: 'участников', en: 'attendees' }, heightPx: 453 },
+    { value: '500+', label: { ru: 'спикеров', en: 'speakers' }, heightPx: 709 },
+    { value: '70+', label: { ru: 'сессий деловой программы', en: 'programming sessions' }, heightPx: 539 },
     {
       value: '2',
       label: {
         ru: 'онлайн-города проведения: Казань и Нижний Новгород',
         en: '2 host cities: Kazan & Nizhny Novgorod',
       },
+      heightPx: 453,
     },
   ],
   cities: { ru: 'Казань+Н.Новгород', en: 'Kazan+N.Novgorod' },

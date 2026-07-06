@@ -3,6 +3,7 @@ export type LocalizedText = { ru: string; en: string };
 export type ProjectStat = {
   value: string;
   label: LocalizedText;
+  heightPx?: number;
 };
 
 export type TeamMember = {
@@ -12,13 +13,15 @@ export type TeamMember = {
 
 export type GalleryPhoto = {
   src: string;
-  credit: LocalizedText;
+  credit?: LocalizedText;
 };
 
 export type Partner = {
   logo: string;
   url?: string;
   name: string;
+  width: number;
+  height: number;
 };
 
 export type Project = {
@@ -29,7 +32,11 @@ export type Project = {
   cover: string;
   title: LocalizedText;
   coverSubtitle?: LocalizedText;
-  partnerLogo?: string;
+  partnerLogo?: {
+    src: string;
+    width: number;
+    height: number;
+  }[];
   description?: LocalizedText;
   stats: ProjectStat[];
   cities: LocalizedText;

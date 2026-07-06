@@ -14,7 +14,9 @@ export const visionariesDinner: Project = {
     ru: 'Вечер для героев проекта',
     en: 'Networking Event for the "RBC Visionaries" project community',
   },
-  partnerLogo: '/logos/rbc.svg',
+  partnerLogo: [
+    { src: '/logos/rbc.svg', width: 190, height: 51 }
+  ],
   stats: [
     {
       value: '150+',
@@ -22,6 +24,7 @@ export const visionariesDinner: Project = {
         ru: 'участников проекта "Визионеры"',
         en: 'the "RBC Visionaries" project participants',
       },
+      heightPx: 453,
     },
   ],
   cities: { ru: 'Москва', en: 'Moscow' },
