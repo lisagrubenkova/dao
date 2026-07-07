@@ -12,28 +12,28 @@ export const moscowStartupSummit: Project = {
   },
   partnerLogo: [{ 
     src:'/logos/sber.svg',
-    width: 375,
-    height: 102
+    width: 250,
+    height: 68
   }],
   description: {
-    ru: 'Международный саммит, посвящённый технологическому предпринимательству, венчурным инвестициям и инновациям',
-    en: 'An international summit dedicated to technology entrepreneurship, venture capital investments and innovation',
+    ru: 'Международный саммит, посвящённый технологическому предпринимательству, венчурным инвестициям и\u00A0инновациям',
+    en: 'An international summit dedicated to\u00A0technology entrepreneurship, venture capital investments and innovation',
   },
   stats: [
     {
       value: '5000+',
-      label: { ru: 'участников из 28 стран', en: 'attendees from 20 countries' },
+      label: { ru: 'участников из\u00A028\u00A0стран', en: 'attendees from 20\u00A0countries' },
       heightPx: 453,
     },
     {
       value: '160+',
-      label: { ru: 'российских и международных спикеров', en: 'international & local speakers' },
+      label: { ru: 'российских и\u00A0международных спикеров', en: 'international\u00A0&\u00A0local speakers' },
       heightPx: 709,
     },
     {
       value: '200+',
       label: {
-        ru: 'запросов молодых компаний на пилоты с партнёрами саммита',
+        ru: 'запросов молодых компаний на\u00A0пилоты с\u00A0партнёрами саммита',
         en: 'startup applications for corporate pilots',
       },
       heightPx: 539,
@@ -48,12 +48,12 @@ export const moscowStartupSummit: Project = {
   format: { ru: 'онлайн+офлайн', en: 'offline+online' },
   year: '2024',
   task: {
-    ru: 'Сделать саммит флагманским мероприятием по венчурному предпринимательству.\n\nСоздать программу, в которой форматы и нетворкинг приводят к запуску пилотов и сделок',
-    en: 'Benchmark Showcase: Position the summit as a leading venture ecosystem event\n\nValue-Driven: Focused on networking, experimentation, and real business outcomes',
+    ru: 'Сделать саммит флагманским мероприятием по\u00A0венчурному предпринимательству.\n\nСоздать программу, в\u00A0которой форматы и\u00A0нетворкинг приводят к\u00A0запуску пилотов и\u00A0сделок',
+    en: 'Benchmark Showcase: Position the\u00A0summit as a\u00A0leading venture ecosystem event\n\nValue-Driven: Focused on\u00A0networking, experimentation, and real business outcomes',
   },
   result: {
-    ru: 'Архитектура деловой программы для пяти треков и разных аудиторий.\n\nФорматы обратных презентаций корпораций, организация деловых встреч "молодая компания - корпорация - инвестор ", конвертирующий новые деловые связи в пилоты',
-    en: '5-Track Framework: Corporate reverse pitches and matchmaking to drive commercial pilots',
+    ru: 'Архитектура деловой программы для\u00A0пяти треков и\u00A0разных аудиторий.\n\nФорматы обратных презентаций корпораций, организация деловых встреч "молодая компания\u00A0- корпорация\u00A0- инвестор ", конвертирующий новые деловые связи в\u00A0пилоты',
+    en: '5-Track Framework: Corporate reverse pitches and matchmaking to\u00A0drive commercial pilots',
   },
   gallery: [
     { src: '/projects/moscow-startup-summit/1.jpg' },

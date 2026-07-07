@@ -25,8 +25,8 @@ export function GlassArrow({
       <img
         src="/GlassArrow.svg"
         alt=""
-        style={{ transform: direction === 'right' ? 'rotate(180deg)' : undefined }}
-      />
+        style={{ transform: direction === 'right' ? 'scaleX(-1)' : undefined }}
+        />
     </button>
   );
 }

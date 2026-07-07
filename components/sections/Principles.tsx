@@ -23,8 +23,8 @@ export function Principles() {
         {t('title')}
       </h2>
 
-      {/* Сетка: на мобилке 2×2, на десктопе 4×1. Высота — 80vh */}
-      <div className="grid grid-cols-2 md:grid-cols-4 w-full h-[90vh]">
+      {/* Мобилка: 2 колонки, высоту задаёт min-h карточки. Десктоп: 4×1, 90vh */}
+      <div className="grid grid-cols-2 md:grid-cols-4 w-full md:h-[90vh]">
         {items.map((text, i) => (
           <PrincipleCard
             key={i}

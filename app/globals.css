@@ -158,14 +158,14 @@ body {
 .glass-arrow img { display: block; width: var(--w); height: var(--h); }
 
 /* мобилка */
-.glass-arrow--gallery  { --w: 6px;  --h: 10px; }
-.glass-arrow--carousel { --w: 17px; --h: 31px; }
+.glass-arrow--gallery  { --w: 12px; --h: 20px; }
+.glass-arrow--carousel { --w: 34px; --h: 62px; }
 
 .glass-arrow--carousel img {
   filter: brightness(0.25) drop-shadow(0 2px 6px rgba(0,0,0,0.25));
 }
 /* десктоп */
 @media (min-width: 768px) {
-  .glass-arrow--gallery  { --w: 28px; --h: 50px; }
-  .glass-arrow--carousel { --w: 35px; --h: 62px; }
+  .glass-arrow--gallery  { --w: 56px;  --h: 100px; }
+  .glass-arrow--carousel { --w: 70px;  --h: 124px; }
 }

@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "not another event.\na reason to gather",
-    "subtitle": "dao creates thoughtful brand experiences — from summits and forums to private dinners, public programmes and partnerships"
+    "title": "not another event.\na\u00A0reason to\u00A0gather",
+    "subtitle": "dao creates thoughtful brand experiences\u00A0— from summits and forums to\u00A0private dinners, public programmes and partnerships"
   },
   "menu": {
     "about": "about",
@@ -18,52 +18,52 @@
     "contact": "Let's talk!"
   },
   "about": {
-    "intro": "A reason to gather is curated.\nWe connect the goal, audience, content and people — turning an idea into an experience with purpose and structure.",
+    "intro": "A\u00A0reason to\u00A0gather is\u00A0curated.\nWe connect the\u00A0goal, audience, content and people\u00A0— turning an\u00A0idea into an\u00A0experience with purpose and structure.",
     "pillars": [
-      { "marker": "/", "title": "Research", "subtitle": "we understand the context and the people we need to reach" },
-      { "marker": "//", "title": "Programme", "subtitle": "we turn the idea into a clear structure" },
+      { "marker": "/", "title": "Research", "subtitle": "we understand the\u00A0context and the\u00A0people we\u00A0need to\u00A0reach" },
+      { "marker": "//", "title": "Programme", "subtitle": "we turn the\u00A0idea into a\u00A0clear structure" },
       { "marker": "///", "title": "Delivery", "subtitle": "we align speakers, partners and production around one direction" }
     ],
     "outro": ""
   },
   "projectDetails": {
     "task": "Objective",
-    "result": "Impact & outcomes"
+    "result": "Impact\u00A0&\u00A0outcomes"
   },
   "projects": {
     "viewProject": "explore"
   },
   "team": {
-    "title": "What we do",
+    "title": "What we\u00A0do",
     "points": [
       "we turn client goals into compelling event ideas",
       "we pair curatorial thinking with bold execution",
-      "we shape the content of business, educational and public-facing events to help brands stand out"
+      "we shape the\u00A0content of\u00A0business, educational and public-facing events to\u00A0help brands stand out"
     ]
   },
   "principles": {
-    "title": "The philosophy",
+    "title": "The\u00A0philosophy",
     "items": [
       "Partnership built around clear goals and mutual trust",
-      "research first before the idea, we study the room",
-      "Projects shaped around the people they need to reach",
+      "research first before the\u00A0idea, we study the\u00A0room",
+      "Projects shaped around the\u00A0people they need to\u00A0reach",
       "Tested formats, fresh ideas, clear execution"
     ]
   },
   "algorithm": {
-    "title": "How we work",
+    "title": "How we\u00A0work",
     "steps": [
       {
         "title": "Research",
-        "description": "we define the brief, study the audience and run expert interviews"
+        "description": "we define the\u00A0brief, study the\u00A0audience and run expert interviews"
       },
       {
         "title": "Market validation",
-        "description": "we test the programme concept with industry experts and audience representatives"
+        "description": "we test the\u00A0programme concept with industry experts and audience representatives"
       },
       {
         "title": "Programme design",
-        "description": "we shape the programme architecture, key messages and session formats"
+        "description": "we shape the\u00A0programme architecture, key messages and session formats"
       },
       {
         "title": "Talent outreach",
@@ -71,32 +71,32 @@
       },
       {
         "title": "Content development",
-        "description": "we work with speakers and moderators on session narratives, scripts and supporting materials"
+        "description": "we work with speakers and moderators on\u00A0session narratives, scripts and supporting materials"
       },
       {
         "title": "On-site delivery",
-        "description": "delivering programme formats on site with full speaker and moderator management"
+        "description": "delivering programme formats on\u00A0site with full speaker and moderator management"
       }
     ]
   },
   "contact": {
-    "title": "Let's shape the narrative together!",
-    "paragraph1": "We believe the best cultural and business events happen when a brand's values meet a clear understanding of its audience.",
-    "paragraph2": "Bring us an idea, a brief or an early direction — we can help shape the concept, build the programme and lead the project through to delivery.",
+    "title": "Let's shape the\u00A0narrative together!",
+    "paragraph1": "We believe the\u00A0best cultural and business events happen when a\u00A0brand's values meet a\u00A0clear understanding of\u00A0its audience.",
+    "paragraph2": "Bring us an\u00A0idea, a\u00A0brief or an\u00A0early direction\u00A0— we\u00A0can help shape the\u00A0concept, build the\u00A0programme and lead the\u00A0project through to\u00A0delivery.",
     "email": "hello@daospacedao.com"
   },
   "footer": {
     "tagline": "A boutique team turning brand goals into formats that move business forward",
     "downloadPortfolio": "download portfolio",
     "nav": {
-      "algorithm": "how we work",
+      "algorithm": "how we\u00A0work",
       "projects": "projects",
       "portfolio": "portfolio",
       "contacts": "contacts"
     },
     "team": [
-      { "name": "Daria Kolganova", "phone": "+79852217967", "telegram": "@darya_kolganova" },
-      { "name": "Yulia Gerasimenko", "phone": "+79850581797", "telegram": "@mirandajulia" }
+      { "name": "Daria\u00A0Kolganova", "phone": "+79852217967", "telegram": "@darya_kolganova" },
+      { "name": "Yulia\u00A0Gerasimenko", "phone": "+79850581797", "telegram": "@mirandajulia" }
     ],
     "year": "2026, dao team"
   }

@@ -8,14 +8,14 @@ export const rbcVisionariesCommunity: Project = {
   cover: '/projects/rbc-visionaries-community/cover.jpg',
   title: {
     ru: 'Развитие проекта «РБК Визионеры. сообщество»',
-    en: 'Developing the ‘RBC Visionaries. Community’ ecosystem',
+    en: 'Developing the\u00A0‘RBC Visionaries. Community’ ecosystem',
   },
   partnerLogo: [
     { src: '/logos/rbc.svg', width: 190, height: 51 }
   ],
   description: {
     ru: 'стратегическое развитие онлайн-проекта «РБК Визионеры.сообщество»',
-    en: 'Strategic growth of the “RBC Visionaries.Community” digital initiative',
+    en: 'Strategic growth of the\u00A0“RBC Visionaries.Community” digital initiative',
   },
   stats: [
     {
@@ -31,18 +31,18 @@ export const rbcVisionariesCommunity: Project = {
   format: { ru: 'онлайн', en: 'online' },
   year: '2026',
   task: {
-    ru: 'Разработать с нуля формат для онлайн-нетворкинга и контент-план для запуска закрытого сообщества «РБК Визионеры. Сообщество»',
-    en: 'Experience Design: Conceptualize a bespoke digital networking format from scratch for the launch of the private ‘RBC Visionaries.Community’\n\nContent Strategy: Develop an elevated launch content strategy to activate the exclusive club',
+    ru: 'Разработать с\u00A0нуля формат для\u00A0онлайн-нетворкинга и\u00A0контент-план для\u00A0запуска закрытого сообщества «РБК Визионеры. Сообщество»',
+    en: 'Experience Design: Conceptualize a\u00A0bespoke digital networking format from scratch for the\u00A0launch of the\u00A0private ‘RBC Visionaries.Community’\n\nContent Strategy: Develop an\u00A0elevated launch content strategy to\u00A0activate the\u00A0exclusive club',
   },
   result: {
-    ru: 'Объединили более 150 лидеров индустрий в единой цифровой экосистеме. Интегрировали сквозную рубрику для фасилитации знакомств и поиска бизнес-партнёров среди героев проекта "РБК Визионеры. Сообщество". Проработали стратегический контент-план развития сообщества.',
-    en: 'Network Building: Convene 150+ industry leaders within a unified digital ecosystem\n\nFacilitated Networking: Integrate a dedicated feature for peer-to-peer discovery and business matchmaking\n\nContent Strategy: Design a strategic roadmap for the club’s long-term growth',
+    ru: 'Объединили более\u00A0150\u00A0лидеров индустрий в\u00A0единой цифровой экосистеме. Интегрировали сквозную рубрику для\u00A0фасилитации знакомств и\u00A0поиска бизнес-партнёров среди героев проекта "РБК Визионеры. Сообщество". Проработали стратегический контент-план развития сообщества.',
+    en: 'Network Building: Convene 150+\u00A0industry leaders within a\u00A0unified digital ecosystem\n\nFacilitated Networking: Integrate a\u00A0dedicated feature for peer-to-peer discovery and business matchmaking\n\nContent Strategy: Design a\u00A0strategic roadmap for the\u00A0club’s long-term growth',
   },
   partners: [
     { logo: '/logos/splat.svg', name: 'Splat', url: 'https://splat.global', width: 211, height: 143 },
     { logo: '/logos/arhstoyanie.svg', name: 'Архстояние', url: 'https://arch.stoyanie.ru', width: 139, height: 33 },
     { logo: '/logos/lime.svg', name: 'LIME', url: 'https://www.lime-shop.com', width: 222, height: 80 },
-    { logo: '/logos/beat.svg', name: 'BEAT Film Festival', url: 'https://beatfilmfestival.ru', width: 255, height: 255 },
+    { logo: '/logos/beat.svg', name: 'BEAT\u00A0Film\u00A0Festival', url: 'https://beatfilmfestival.ru', width: 255, height: 255 },
     { logo: '/logos/u.svg', name: 'U', url: '', width: 219, height: 132 },
     { logo: '/logos/ozero.svg', name: 'Озеро', url: '', width: 382, height: 211 },
     { logo: '/logos/befree.svg', name: 'Befree', url: 'https://befree.ru', width: 156, height: 39 },
@@ -51,8 +51,8 @@ export const rbcVisionariesCommunity: Project = {
     { logo: '/logos/shik.svg', name: 'SHIK', url: '', width: 245, height: 68 },
   ],
   gallery: [
-    { src: '/projects/rbc-visionaries-community/1.jpg', credit: { ru: 'фото: Николай Казеев', en: 'ph: Nikolay Kazeev' } },
-    { src: '/projects/rbc-visionaries-community/2.jpg', credit: { ru: 'фото: Николай Казеев', en: 'ph: Nikolay Kazeev' } },
-    { src: '/projects/rbc-visionaries-community/3.jpg', credit: { ru: 'фото: Николай Казеев', en: 'ph: Nikolay Kazeev' } },
+    { src: '/projects/rbc-visionaries-community/1.jpg', credit: { ru: 'фото: Николай\u00A0Казеев', en: 'ph: Nikolay\u00A0Kazeev' } },
+    { src: '/projects/rbc-visionaries-community/2.jpg', credit: { ru: 'фото: Николай\u00A0Казеев', en: 'ph: Nikolay\u00A0Kazeev' } },
+    { src: '/projects/rbc-visionaries-community/3.jpg', credit: { ru: 'фото: Николай\u00A0Казеев', en: 'ph: Nikolay\u00A0Kazeev' } },
   ],
 };

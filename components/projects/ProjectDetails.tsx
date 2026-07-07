@@ -91,7 +91,7 @@ export function ProjectDetails({ project, locale }: Props) {
             </h2>
 
             {(project.coverSubtitle || project.description || project.partnerLogo) && (
-              <div className="text-left flex flex-col gap-4 max-w-[45%] ml-auto self-end">
+              <div className="text-left flex flex-col gap-2 md:gap-4 max-w-[45%] ml-auto self-end">
                 {project.coverSubtitle && (
                   <p className="font-mono" style={{ fontSize: fluidDesc, lineHeight: 1.4 }}>
                     {project.coverSubtitle[locale]}
@@ -198,13 +198,22 @@ export function ProjectDetails({ project, locale }: Props) {
             ({project.cities[locale]} — {project.year} — {project.format[locale]})
           </p>
 
-          {/* Сетка: на мобилке всё в одну колонку, на десктопе две */}
+          {/*
+            Сетка. На мобилке (одна колонка) порядок задаётся через order:
+              1) текст (задача/результат/команда)
+              2) галерея
+              3) партнёры  ← уходят в самый низ, под галерею
+            На десктопе (две колонки) раскладка восстанавливается явным
+            размещением по колонкам/строкам:
+              • левая колонка: текст (строка 1) + партнёры (строка 2)
+              • правая колонка: галерея на всю высоту (row-span-2)
+          */}
           <div
             className="grid grid-cols-1 lg:grid-cols-2"
             style={{ gap: 'clamp(32px, 4vw, 80px)' }}
           >
-            {/* Левая колонка — текст */}
-            <div className="flex flex-col gap-[clamp(32px,4vw,80px)]">
+            {/* Текст — задача, результат, команда */}
+            <div className="order-1 lg:order-none lg:col-start-1 lg:row-start-1 flex flex-col gap-[clamp(32px,4vw,80px)]">
               <div>
                 <h3
                   className="font-mono font-bold uppercase mb-4"
@@ -217,7 +226,7 @@ export function ProjectDetails({ project, locale }: Props) {
                   style={{
                     fontSize: fluidBody,
                     lineHeight: 1.5,
-                    paddingLeft: 'clamp(117px, 84.5px + 8.67vw, 251px)',
+                    paddingLeft: 'clamp(117px, 99.28px + 4.72vw, 190px)',
                   }}
                 >
                   {project.task[locale]}
@@ -236,7 +245,7 @@ export function ProjectDetails({ project, locale }: Props) {
                   style={{
                     fontSize: fluidBody,
                     lineHeight: 1.5,
-                    paddingLeft: 'clamp(117px, 84.5px + 8.67vw, 251px)',
+                    paddingLeft: 'clamp(117px, 99.28px + 4.72vw, 190px)',
                   }}
                 >
                   {project.result[locale]}
@@ -260,57 +269,58 @@ export function ProjectDetails({ project, locale }: Props) {
                   ))}
                 </ul>
               )}
-
-              {project.partners && project.partners.length > 0 && (
-                <div
-                  className="flex flex-wrap items-center justify-center"
-                  style={{
-                    columnGap: 'clamp(28px, 5vw, 96px)',
-                    rowGap: 'clamp(32px, 5vw, 80px)',
-                    marginTop: 'clamp(24px, 4vw, 64px)',
-                  }}
-                >
-                  {project.partners.map((p, i) => {
-                    // детерминированные паттерны — стабильны для SSR, без hydration mismatch
-                    const jitter = [0, 0.8, -0.6, 0.4, -1, 0.5, -0.3];   // вертикальный сдвиг
-                    const scale  = [1, 0.85, 1.1, 0.92, 1.05, 0.8, 1.12]; // разброс размеров
-                    const dy = jitter[i % jitter.length];
-                    const s  = scale[i % scale.length];
-
-                    const logo = (
-                      <div
-                        style={{
-                          width: `clamp(${p.width * 0.28 * s}px, ${((p.width / 1920) * 100 * s).toFixed(2)}vw, ${Math.round(p.width * s)}px)`,
-                          transform: `translateY(calc(${dy} * clamp(8px, 2vw, 32px)))`,
-                        }}
-                      >
-                        <Image
-                          src={p.logo}
-                          alt={p.name}
-                          width={p.width}
-                          height={p.height}
-                          className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
-                          style={{ width: '100%', height: 'auto' }}
-                        />
-                      </div>
-                    );
-
-                    return p.url ? (
-                      <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" className="inline-block">
-                        {logo}
-                      </a>
-                    ) : (
-                      <div key={i}>{logo}</div>
-                    );
-                  })}
-                </div>
-              )}
             </div>
 
-            {/* Правая колонка — галерея. На мобилке она будет под текстом из-за grid-cols-1 */}
-            <div>
+            {/* Галерея. На мобилке идёт под текстом (order-2), на десктопе — правая колонка на всю высоту */}
+            <div className="order-2 lg:order-none lg:col-start-2 lg:row-start-1 lg:row-span-2">
               <ProjectGallery photos={project.gallery} locale={locale} />
             </div>
+
+            {/* Партнёры. На мобилке — в самом низу под галереей (order-3), на десктопе — слева под текстом */}
+            {project.partners && project.partners.length > 0 && (
+              <div
+                className="order-3 lg:order-none lg:col-start-1 lg:row-start-2 flex flex-wrap items-center justify-center"
+                style={{
+                  columnGap: 'clamp(28px, 5vw, 96px)',
+                  rowGap: 'clamp(32px, 5vw, 80px)',
+                  marginTop: 'clamp(24px, 4vw, 64px)',
+                }}
+              >
+                {project.partners.map((p, i) => {
+                  // детерминированные паттерны — стабильны для SSR, без hydration mismatch
+                  const jitter = [0, 0.8, -0.6, 0.4, -1, 0.5, -0.3];   // вертикальный сдвиг
+                  const scale  = [1, 0.85, 1.1, 0.92, 1.05, 0.8, 1.12]; // разброс размеров
+                  const dy = jitter[i % jitter.length];
+                  const s  = scale[i % scale.length];
+
+                  const logo = (
+                    <div
+                      style={{
+                        width: `clamp(${p.width * 0.28 * s}px, ${((p.width / 1920) * 100 * s).toFixed(2)}vw, ${Math.round(p.width * s)}px)`,
+                        transform: `translateY(calc(${dy} * clamp(8px, 2vw, 32px)))`,
+                      }}
+                    >
+                      <Image
+                        src={p.logo}
+                        alt={p.name}
+                        width={p.width}
+                        height={p.height}
+                        className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+                        style={{ width: '100%', height: 'auto' }}
+                      />
+                    </div>
+                  );
+
+                  return p.url ? (
+                    <a key={i} href={p.url} target="_blank" rel="noopener noreferrer" className="inline-block">
+                      {logo}
+                    </a>
+                  ) : (
+                    <div key={i}>{logo}</div>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       </motion.div>

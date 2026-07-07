@@ -8,14 +8,14 @@ export const russiaOpenSource: Project = {
   cover: '/projects/russia-open-source-summit/cover.jpg',
   title: { ru: 'Russia Open Source Summit', en: 'Russia Open Source Summit' },
   description: {
-    ru: 'Серия офлайн-событий медиа-проекта «РБК Визионеры» о людях, которые формируют будущее бизнеса, технологий и культуры',
-    en: 'A premier ecosystem showcase for the open-source community, centering on the future of code and open technologies.',
+    ru: 'Серия офлайн-событий медиапроекта «РБК Визионеры» о\u00A0людях, которые формируют будущее бизнеса, технологий и\u00A0культуры',
+    en: 'A\u00A0premier ecosystem showcase for the\u00A0open-source community, centering on the\u00A0future of\u00A0code and open technologies.',
   },
   stats: [
     {
       value: '100+',
       label: {
-        ru: 'спикеров из ведущих технологических компаний',
+        ru: 'спикеров из\u00A0ведущих технологических компаний',
         en: 'speakers from leading tech corporations',
       },
       heightPx: 453,
@@ -25,12 +25,12 @@ export const russiaOpenSource: Project = {
   format: { ru: 'онлайн+офлайн', en: 'offline+online' },
   year: '2024',
   task: {
-    ru: 'Собрать на одной площадке разработчиков, IT-компании, популяризаторов open source и GitHub-контрибьюторов.\n\nВыстроить предметный диалог бизнеса, государства и сообщества разработчиков о развитии open source в России',
-    en: 'Ecosystem Showcase: Unite developers, tech corporations, and GitHub contributors in one venue\n\nStrategic Dialogue: Drive regional open-source growth through corporate-government-community alignment',
+    ru: 'Собрать на\u00A0одной площадке разработчиков, ИТ-компании, популяризаторов открытого программного кода / open source и\u00A0GitHub-контрибьюторов.\n\nВыстроить предметный диалог бизнеса, государства и\u00A0сообщества разработчиков о\u00A0развитии открытого кода / open source в\u00A0России',
+    en: 'Ecosystem Showcase: Unite developers, tech corporations, and GitHub contributors in\u00A0one venue\n\nStrategic Dialogue: Drive regional open-source growth through corporate-government-community alignment',
   },
   result: {
-    ru: 'Разработали концепцию саммита и деловой программы, спроектировали децентрализованную экспертную сессию по 6 рабочим группам.\n\nСобрали на одной площадке ключевых игроков российского open source; по итогам работы подготовлены рекомендации по развитию open source для бизнеса, госструктур и IT-сообщества',
-    en: 'Decentralized Framework: Designed the summit concept and led 6 specialized expert working groups\n\nActionable Roadmaps: United key open-source stakeholders to deliver strategic whitepapers for business',
+    ru: 'Разработали концепцию саммита и\u00A0деловой программы, спроектировали децентрализованную экспертную сессию по\u00A06\u00A0рабочим группам.\n\nСобрали на\u00A0одной площадке ключевых игроков российского открытого кода / open source; по\u00A0итогам работы подготовлены рекомендации по\u00A0развитию открытого кода / open source для\u00A0бизнеса, госструктур и\u00A0ИТ-сообщества',
+    en: 'Decentralized Framework: Designed the\u00A0summit concept and led 6\u00A0specialized expert working groups\n\nActionable Roadmaps: United key open-source stakeholders to\u00A0deliver strategic whitepapers for business',
   },
   partners: [
     { logo: '/logos/yandex.svg', name: 'Яндекс', url: 'https://yandex.ru', width: 216, height: 65 },
@@ -42,7 +42,7 @@ export const russiaOpenSource: Project = {
     { logo: '/logos/krok.svg', name: 'КРОК', url: 'https://www.croc.ru', width: 157, height: 42 },
   ],
   gallery: [
-    { src: '/projects/russia-open-source-summit/1.jpg', credit: { ru: 'фото: dao team', en: 'ph: dao team' } },
-    { src: '/projects/russia-open-source-summit/2.jpg', credit: { ru: 'фото: dao team', en: 'ph: dao team' } },
+    { src: '/projects/russia-open-source-summit/1.jpg' },
+    { src: '/projects/russia-open-source-summit/2.jpg' },
   ],
 };

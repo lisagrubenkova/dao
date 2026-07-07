@@ -25,7 +25,7 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: 'start',
-    watchDrag: false,
+    watchDrag: true,
     slidesToScroll: 1,
   });
 
@@ -43,8 +43,15 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
   };
 
   return (
-    <div className="relative flex items-center">
-  <GlassArrow direction="left"  place="carousel" onClick={scrollPrev} />
+    <div className="relative flex items-start">
+      <div
+  className="flex"
+  style={{
+    marginTop: `calc((${cardWidth} - ${cardGap}) * 4 / 3 / 2)`,
+  }}
+>
+  <GlassArrow direction="left" place="carousel" onClick={scrollPrev} />
+</div>
 
       <div ref={emblaRef} className="overflow-hidden flex-1 min-w-0">
         <div className="flex">
@@ -110,8 +117,14 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
           ))}
         </div>
       </div>
-
+<div
+  className="flex"
+  style={{
+    marginTop: `calc((${cardWidth} - ${cardGap}) * 4 / 3 / 2)`,
+  }}
+>
   <GlassArrow direction="right" place="carousel" onClick={scrollNext} />
+</div>
     </div>
   );
 }
