@@ -30,9 +30,9 @@ export const moscowTravelHub: Project = {
     en: 'End-to-End Acceleration: Developed the concept, scouting pipeline, and tracking framework for startups\n\nCorporate Hackathons: Executed enterprise-backed hackathons solving real industry challenges\n\nKnowledge Repository: Built a digital hub with educational insights and media content',
   },
   gallery: [
-    { src: '/projects/moscow-travel-hub/1.jpg' },
-    { src: '/projects/moscow-travel-hub/2.jpg' },
-    { src: '/projects/moscow-travel-hub/3.jpg' },
-    { src: '/projects/moscow-travel-hub/4.jpg' },
+    { src: '/projects/moscow-travel-hub/1.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
+    { src: '/projects/moscow-travel-hub/2.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
+    { src: '/projects/moscow-travel-hub/3.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
+    { src: '/projects/moscow-travel-hub/4.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
   ],
 };

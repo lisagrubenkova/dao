@@ -35,7 +35,7 @@ export const visionariesDinner: Project = {
     en: 'Networking Event: Design and host a\u00A0networking evening for the\u00A0"RBC Visionaries" project community',
   },
   result: {
-    ru: 'Ужин в\u00A0ресторане "Турандот" с\u00A0элементами альтернативной комедии и\u00A0иммерсивного нетворкинга помогли впервые в\u00A0оффлайне познакомить и\u00A0объединить участников проекта "Визионеры".\n\nСоздан "Дневник Визионера"\u00A0— коллективный манифест, объединивший инсайты, рекомендации и\u00A0ключевые смыслы от\u00A0участников проекта',
+    ru: 'Ужин в\u00A0ресторане "Турандот" с\u00A0элементами альтернативной комедии и\u00A0иммерсивного нетворкинга помогли впервые в\u00A0оффлайне познакомить и\u00A0объединить участников проекта "Визионеры".\n\nСоздан "Дневник Визионера"\u00A0— коллективный манифест, объединивший идеи, рекомендации и\u00A0ключевые смыслы от\u00A0участников проекта',
     en: 'Offline Premiere: Hosted the\u00A0first-ever offline gathering at\u00A0Turandot Restaurant, uniting the\u00A0community through immersive networking and alternative comedy \n\nKnowledge Product: Developed the\u00A0"Visionary’s Diary"\u00A0— a\u00A0collective manifesto distilling shared insights, recommendations, and key philosophies from project heroes',
   },
   team: [
@@ -55,7 +55,7 @@ export const visionariesDinner: Project = {
     },
     {
       name: { ru: 'Ника\u00A0Тарасевич', en: 'Nika\u00A0Tarasevich' },
-      role: { ru: 'приглашенная комикесса, ведущая вечера', en: 'guest comedian, host of the\u00A0evening' },
+      role: { ru: 'приглашенный комик, ведущая вечера', en: 'guest comedian, host of the\u00A0evening' },
     },
     {
       name: { ru: 'Миша\u00A0Кострецов', en: 'Misha\u00A0Kostretsov' },

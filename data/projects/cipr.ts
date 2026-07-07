@@ -37,9 +37,9 @@ export const cipr: Project = {
     en: 'Cross-Sector Tracks: Developed specialized programming across key industries (IT, Telecom, Agriculture, Media, Tourism, and Cybersecurity)\n\nEnd-to-End Production: Managed the\u00A0"Digital Industry of Industrial Russia_Innovations" track from startup scouting to\u00A0live pitches',
   },
   gallery: [
-    { src: '/projects/cipr/1.jpg' },
-    { src: '/projects/cipr/2.jpg' },
-    { src: '/projects/cipr/3.jpg' },
-    { src: '/projects/cipr/4.jpg' },
+    { src: '/projects/cipr/1.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
+    { src: '/projects/cipr/2.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
+    { src: '/projects/cipr/3.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
+    { src: '/projects/cipr/4.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
   ],
 };
