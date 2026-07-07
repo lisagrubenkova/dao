@@ -42,7 +42,11 @@ export function Algorithm() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section id="algorithm" className="bg-bg-alt py-section-y">
+    <section
+  id="algorithm"
+  className="bg-bg-alt pt-section-y"
+  style={{ paddingBottom: 'clamp(3rem, 6rem - 4vw, 4rem)' }}
+>
       <h2
         className="font-sans font-medium px-section-x mb-gap-lg"
         style={{ fontSize: 'clamp(40px, 4vw + 1rem, 120px)' }}
@@ -50,7 +54,7 @@ export function Algorithm() {
         {t('title')}
       </h2>
 
-      <div className="relative h-[clamp(200px,60vw,360px)] md:h-[clamp(380px,42vw,560px)]">
+      <div className="relative h-[clamp(300px,80vw,420px)] md:h-[clamp(380px,42vw,560px)]">
         <div
           className="absolute left-0 right-0 h-px bg-ink/30 pointer-events-none z-10"
           style={{ top: 'calc(clamp(80px, 10vw, 140px) + 1rem + 4px)' }}

@@ -8,9 +8,7 @@ type Props = {
   bgImage: string;
 };
 
-// 20px при 1920px, плавно вниз до 11px
-const fluidCardText = 'clamp(11px, 0.6vw + 8px, 20px)';
-
+const fluidCardText = 'clamp(9px, 0.7vw + 6.5px, 20px)';
 const reveal =
   'opacity-100 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:group-hover:opacity-100';
 
@@ -32,7 +30,7 @@ export function PrincipleCard({ number, text, bgImage }: Props) {
       />
 
       {/* ЗОНА ЦИФРЫ: верхние 72% ячейки, цифра центрируется внутри → все цифры на одной линии */}
-      <div className="absolute inset-x-0 top-0 bottom-[28%] z-10 grid place-items-center">
+      <div className="absolute inset-x-0 top-0 bottom-[32%] md:bottom-[28%] z-10 grid place-items-center">
         <span
           className="
             select-none font-sans font-medium leading-none text-white
@@ -48,7 +46,7 @@ export function PrincipleCard({ number, text, bgImage }: Props) {
       </div>
 
       {/* ЗОНА ТЕКСТА: нижние 28% ячейки, всегда на одном месте */}
-      <div className="absolute inset-x-0 bottom-0 z-10 flex h-[28%] items-start justify-center px-4">
+      <div className="absolute inset-x-0 top-[62%] bottom-0 z-10 flex items-start justify-center px-4 md:top-[72%]">
         <p
           className={`max-w-[36ch] text-balance text-center font-mono lowercase text-white transition-opacity duration-500 ${reveal}`}
           style={{ fontSize: fluidCardText, lineHeight: 1.5 }}
