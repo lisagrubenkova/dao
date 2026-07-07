@@ -8,7 +8,7 @@ export const rbcVisionariesPublic: Project = {
   cover: '/projects/rbc-visionaries-public/cover.jpg',
   title: {
     ru: 'РБК Визионеры. Публичная программа.',
-    en: 'RBС VISIONARIES PUBLIC PROGRAMMING',
+    en: 'RBС visionaries public programming',
   },
   partnerLogo: [{ src: '/logos/rbc.svg', width: 221, height: 60 }],
   description: {

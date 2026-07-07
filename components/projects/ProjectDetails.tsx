@@ -77,7 +77,7 @@ export function ProjectDetails({ project, locale }: Props) {
           />
 
           <div
-            className="relative z-10 flex flex-col gap-8"
+            className="relative z-10 flex flex-col gap-2 md:gap-8"
             style={{
               padding: 'clamp(24px, 4vw, 80px)',
               paddingBottom: 0,
@@ -91,7 +91,7 @@ export function ProjectDetails({ project, locale }: Props) {
             </h2>
 
             {(project.coverSubtitle || project.description || project.partnerLogo) && (
-              <div className="text-left flex flex-col gap-2 md:gap-4 max-w-[45%] ml-auto self-end">
+              <div className="text-left flex flex-col gap-2 md:gap-4 max-w-[50%] ml-auto self-end">
                 {project.coverSubtitle && (
                   <p className="font-mono" style={{ fontSize: fluidDesc, lineHeight: 1.4 }}>
                     {project.coverSubtitle[locale]}
