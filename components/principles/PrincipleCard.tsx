@@ -8,7 +8,7 @@ type Props = {
   bgImage: string;
 };
 
-const fluidCardText = 'clamp(9px, 0.7vw + 6.5px, 20px)';
+const fluidCardText = 'clamp(9px, 0.7vw + 5.5px, 20px)';
 const reveal =
   'opacity-100 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:group-hover:opacity-100';
 
@@ -33,7 +33,7 @@ export function PrincipleCard({ number, text, bgImage }: Props) {
       <div className="absolute inset-x-0 top-0 bottom-[32%] md:bottom-[28%] z-10 grid place-items-center">
         <span
           className="
-            select-none font-sans font-medium leading-none text-white
+            select-none font-mono font-medium leading-none text-white
             transition-colors duration-500
             text-[clamp(140px,58vw,360px)]
             md:text-[clamp(300px,30.875vw,1000px)]

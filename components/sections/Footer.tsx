@@ -17,7 +17,6 @@ export function Footer() {
   const navItems: NavItem[] = [
     { key: 'algorithm', label: t('nav.algorithm'), href: '#algorithm' },
     { key: 'projects', label: t('nav.projects'), href: '#projects' },
-    { key: 'portfolio', label: t('nav.portfolio'), href: portfolioSrc },
     { key: 'contacts', label: t('nav.contacts'), href: '#contact' },
   ];
 
@@ -65,19 +64,13 @@ export function Footer() {
             {t('tagline')}
           </p>
 
-          <a
-            href={portfolioSrc}
-            download={locale === 'en' ? 'dao pitchdeck.pdf' : 'dao портфолио.pdf'}
-            className="glass-button self-start inline-flex items-center justify-center
-             w-[80.86px] h-[18.36px] rounded-[16.88px] text-[7px]
-             md:w-[273px] md:h-[62px] md:rounded-[57px] md:text-[24px]
-             font-sans font-normal leading-none lowercase
-             text-[#B7B7B7] hover:text-white
-             backdrop-blur-[21px]
-             shadow-[0px_8px_20px_-6px_rgba(0,0,0,0.12),0px_2px_4px_rgba(0,0,0,0.08),inset_0px_1px_1px_rgba(255,255,255,0.9),inset_0px_-2px_4px_rgba(0,0,0,0.04)]
-             transition-colors"
-          >
-            {t('downloadPortfolio')}
+          <a href={portfolioSrc} 
+             download={locale === 'en' ? 'dao pitchdeck.pdf' : 'dao портфолио.pdf'} 
+             className="glass self-start inline-flex items-center justify-center 
+             px-4 py-1.5 md:px-8 md:py-3 font-sans font-normal leading-none 
+             lowercase text-[7px] md:text-[24px]  hover:bg-white/25 
+             transition-colors cursor-pointer" > 
+             {t('downloadPortfolio')} 
           </a>
         </div>
 
@@ -108,8 +101,20 @@ export function Footer() {
           ))}
 
           <div className="flex justify-end items-end">
-            <p className="font-mono text-[4px] md:text-mono-sm">{t('year')}</p>
-          </div>
+          <p className="font-mono text-[8px] leading-[1.6] md:text-[20px] md:leading-relaxed text-muted">
+            ИП Герасименко Юлия Юрьевна
+            <br />
+            ИНН 526017711095
+            <br />
+            ОГРН 325527500004712
+            <br />
+            Адрес г Нижний Новгород, ул. Пискунова, д 3, к 3, кв 134Б
+            <br />
+            +7 985 058 1797
+            <br />
+            gerasimenkoiuliia@gmail.com
+          </p>
+        </div>
         </div>
       </div>
     </footer>

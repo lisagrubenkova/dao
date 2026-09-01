@@ -9,13 +9,12 @@ import { GlassArrow } from '../ui/GlassArrow';
 
 type Props = {
   projects: Project[];
-  activeId: string;
+  activeId: string | null;
   onSelect: (id: string) => void;
 };
 
 const fluidTitle = 'clamp(18px, 0.75rem + 0.83vw, 32px)';
 const fluidMeta = 'clamp(13px, 0.6rem + 0.6vw, 24px)';
-const cardWidth = 'clamp(320px, 17.36rem + 15.375vw, 566px)';
 const cardGap = 'clamp(16px, 1.5vw, 32px)';
 
 export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
@@ -34,24 +33,25 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
 
   const handleView = (id: string) => {
     onSelect(id);
-    // ждём React-рендер деталей и плавно скроллим
     requestAnimationFrame(() => {
-      document
-        .getElementById('project-details')
-        ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      requestAnimationFrame(() => {
+        document
+          .getElementById('project-details')
+          ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
     });
   };
 
   return (
-    <div className="relative flex items-start">
+    <div className="carousel-wrap relative flex items-start">
       <div
-  className="flex"
-  style={{
-    marginTop: `calc((${cardWidth} - ${cardGap}) * 4 / 3 / 2)`,
-  }}
->
-  <GlassArrow direction="left" place="carousel" onClick={scrollPrev} />
-</div>
+        className="flex"
+        style={{
+          marginTop: `calc((100vw / var(--cards-visible)) * 4 / 3 / 2)`,
+        }}
+      >
+        <GlassArrow direction="left" place="carousel" onClick={scrollPrev} />
+      </div>
 
       <div ref={emblaRef} className="overflow-hidden flex-1 min-w-0">
         <div className="flex">
@@ -59,7 +59,10 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
             <div
               key={p.id}
               className="shrink-0"
-              style={{ flex: `0 0 ${cardWidth}`, paddingRight: cardGap }}
+              style={{
+                flex: `0 0 calc(100% / var(--cards-visible) + 0.5px)`,
+                paddingRight: cardGap,
+              }}
             >
               <div
                 onClick={() => onSelect(p.id)}
@@ -70,7 +73,7 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
                     src={p.thumbnail}
                     alt={p.title[locale]}
                     fill
-                    sizes="(max-width: 768px) 90vw, 566px"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1536px) 33vw, 25vw"
                     className="object-cover"
                   />
 
@@ -79,7 +82,7 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
                       className="glass absolute top-4 left-4 text-white font-sans rounded-full px-4 py-1.5 uppercase"
                       style={{ fontSize: fluidMeta }}
                     >
-                      TOP
+                      {locale === 'en' ? 'TOP' : 'ТОП'}
                     </span>
                   )}
 
@@ -89,26 +92,27 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
                       e.stopPropagation();
                       handleView(p.id);
                     }}
-                    className="glass absolute bottom-4 right-4 text-white font-mono rounded-full px-5 py-2  transition-colors hover:bg-white/25 cursor-pointer"
+                    className="glass absolute bottom-4 right-4 text-white font-mono rounded-full px-5 py-2 transition-colors hover:bg-white/25 cursor-pointer"
                     style={{ fontSize: fluidMeta }}
                   >
                     {t('viewProject')}
                   </button>
                 </div>
 
-                {/* В колонку */}
                 <div className="mt-4 flex flex-col gap-2">
                   <h3
                     className="font-sans font-bold"
                     style={{ fontSize: fluidTitle, lineHeight: 1.2 }}
                   >
-                    {p.title[locale]}
+                    {p.thumbnail_title ? p.thumbnail_title[locale] : p.title[locale]}
                   </h3>
                   <div
                     className="font-mono items-end text-right"
                     style={{ fontSize: fluidMeta, lineHeight: 1.3 }}
                   >
-                    <div>{p.cities[locale]}, {p.year}</div>
+                    <div>
+                      {p.cities[locale]}, {p.year}
+                    </div>
                     <div className="text-accent">{p.format[locale]}</div>
                   </div>
                 </div>
@@ -117,14 +121,15 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
           ))}
         </div>
       </div>
-<div
-  className="flex"
-  style={{
-    marginTop: `calc((${cardWidth} - ${cardGap}) * 4 / 3 / 2)`,
-  }}
->
-  <GlassArrow direction="right" place="carousel" onClick={scrollNext} />
-</div>
+
+      <div
+        className="flex"
+        style={{
+          marginTop: `calc((100vw / var(--cards-visible)) * 4 / 3 / 2)`,
+        }}
+      >
+        <GlassArrow direction="right" place="carousel" onClick={scrollNext} />
+      </div>
     </div>
   );
 }

@@ -29,10 +29,16 @@ export type Project = {
   slug: string;
   top: boolean;
   thumbnail: string;
+  thumbnail_title?: LocalizedText;
   cover: string;
   title: LocalizedText;
   coverSubtitle?: LocalizedText;
   partnerLogo?: {
+    src: string;
+    width: number;
+    height: number;
+  }[];
+  partnerLogoEn?: {
     src: string;
     width: number;
     height: number;

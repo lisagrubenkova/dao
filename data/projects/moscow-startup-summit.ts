@@ -15,6 +15,11 @@ export const moscowStartupSummit: Project = {
     width: 250,
     height: 68
   }],
+  partnerLogoEn: [{
+    src:'/logos/sber-en.svg',
+    width: 349,
+    height: 186
+  }],
   description: {
     ru: 'Международный саммит, посвящённый технологическому предпринимательству, венчурным инвестициям и\u00A0инновациям',
     en: 'An international summit dedicated to\u00A0technology entrepreneurship, venture capital investments and innovation',
@@ -22,7 +27,7 @@ export const moscowStartupSummit: Project = {
   stats: [
     {
       value: '5000+',
-      label: { ru: 'участников из\u00A028\u00A0стран', en: 'attendees from 20\u00A0countries' },
+      label: { ru: 'участников из\u00A020\u00A0стран', en: 'attendees from 20\u00A0countries' },
       heightPx: 453,
     },
     {
@@ -39,14 +44,14 @@ export const moscowStartupSummit: Project = {
       heightPx: 539,
     },
     {
-      value: '50+',
-      label: { ru: 'миллионов онлайн-просмотров', en: 'million online views' },
+      value: '50млн+',
+      label: { ru: 'онлайн-просмотров', en: 'million online views' },
       heightPx: 453,
     },
   ],
   cities: { ru: 'Москва', en: 'Moscow' },
-  format: { ru: 'онлайн+офлайн', en: 'offline+online' },
-  year: '2024',
+  format: { ru: 'онлайн + офлайн', en: 'offline + online' },
+  year: '2025',
   task: {
     ru: 'Сделать саммит флагманским мероприятием по\u00A0венчурному предпринимательству.\n\nСоздать программу, в\u00A0которой форматы и\u00A0нетворкинг приводят к\u00A0запуску пилотов и\u00A0сделок',
     en: 'Benchmark Showcase: Position the\u00A0summit as a\u00A0leading venture ecosystem event\n\nValue-Driven: Focused on\u00A0networking, experimentation, and real business outcomes',

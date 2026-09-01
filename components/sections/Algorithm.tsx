@@ -20,7 +20,7 @@ export function Algorithm() {
     containScroll: false,
     dragFree: false,
   },
-  [Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })]
+  [Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })]
 );
 
   const [activeIndex, setActiveIndex] = useState(0);

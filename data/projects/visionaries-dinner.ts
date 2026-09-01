@@ -21,7 +21,7 @@ export const visionariesDinner: Project = {
     {
       value: '150+',
       label: {
-        ru: 'участников проекта "Визионеры"',
+        ru: 'участников проекта\n"Визионеры"',
         en: 'the\u00A0"RBC Visionaries" project participants',
       },
       heightPx: 453,

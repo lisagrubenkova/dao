@@ -21,7 +21,7 @@ export function AnimatedLine({ label, href }: Props) {
         </div>
 
         {/* Длина линии зависит от высоты вьюпорта, с потолком */}
-        <div className="border-1 border-ink/60 h-[clamp(48px,14vh,170px)] group-hover:h-[clamp(90px,24vh,280px)] transition-all duration-500 ease-out" />
+        <div className="w-px bg-ink/60 h-[clamp(48px,14vh,170px)] group-hover:h-[clamp(90px,24vh,280px)] scale-x-50 transition-all duration-500 ease-out origin-center" />
       </div>
     </div>
   );

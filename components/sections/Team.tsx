@@ -8,7 +8,7 @@ export function Team() {
   const points = t.raw('points') as string[];
 
   return (
-    <section id="team" className="bg-bg py-section-y">
+    <section id="team" className="bg-bg py-24 md:py-12">
         <h2 className="text-display font-sans font-medium mb-gap-lg px-section-x" style={{ fontSize: 'clamp(40px, 4vw + 1rem, 120px)' }}>
           {t('title')}
         </h2>

@@ -5,6 +5,10 @@ export const rbcVisionariesPublic: Project = {
   slug: 'rbc-visionaries-public',
   top: false,
   thumbnail: '/projects/rbc-visionaries-public/thumb.jpg',
+  thumbnail_title: {
+    ru: 'РБК Визионеры',
+    en: 'RBС visionaries',
+  },
   cover: '/projects/rbc-visionaries-public/cover.jpg',
   title: {
     ru: 'РБК Визионеры. Публичная программа.',
@@ -12,19 +16,19 @@ export const rbcVisionariesPublic: Project = {
   },
   partnerLogo: [{ src: '/logos/rbc.svg', width: 221, height: 60 }],
   description: {
-    ru: 'Серия офлайн-событий медиапроекта «РБК Визионеры» о\u00A0людях, которые формируют будущее бизнеса, технологий и\u00A0культуры',
-    en: 'A\u00A0series of\u00A0offline activations for RBc Visionaries\u00A0— RBc’s annual cross-disciplinary list spotlighting people shaping the\u00A0future of\u00A0business, technology, culture and lifestyle',
+    ru: 'Серия офлайн-событий медиапроекта «РБК Визионеры» о\u00A0людях, которые формируют\nбудущее бизнеса, технологий и\u00A0культуры',
+    en: 'A\u00A0series of\u00A0offline activations for RBC Visionaries\u00A0— RBc’s annual cross-disciplinary list spotlighting people shaping the\u00A0future of\u00A0business, technology, culture and lifestyle',
   },
   stats: [
     {
-      value: '5000+',
-      label: { ru: 'участников из\u00A028\u00A0стран', en: 'attendees' },
+      value: '500+',
+      label: { ru: 'гостей программы', en: 'attendees' },
       heightPx: 709,
     },
   ],
   cities: { ru: 'Москва', en: 'Moscow' },
-  format: { ru: 'онлайн+офлайн', en: 'offline+online' },
-  year: '2024',
+  format: { ru: 'онлайн + офлайн', en: 'offline + online' },
+  year: '2025',
   task: {
     ru: 'Разработать и\u00A0провести публичную офлайн-программу для\u00A0медиапроекта «РБК Визионеры» о\u00A0людях, которые формируют будущее в\u00A0бизнесе, технологиях, искусстве и\u00A0других областях',
     en: 'On-Site Programming: Launch a\u00A0public event framework for the\u00A0RBC Visionaries project. Future-Focused: Spotlight leaders in\u00A0business, tech, art, and innovation',
@@ -37,7 +41,7 @@ export const rbcVisionariesPublic: Project = {
     {
       name: { ru: 'Андрей\u00A0Шаронов', en: 'Andrey\u00A0Sharonov' },
       role: {
-        ru: 'генеральный директор национального Альянса по\u00A0вопросам устойчивого развития, бывший президент Московской школы управления «Сколково» (вошедшей в\u00A0рейтинг лучших бизнес-школ мира Eduniversal\u00A02024)',
+        ru: 'генеральный директор национального Альянса по\u00A0вопросам устойчивого развития (EGS-альянса), бывший президент Московской школы управления «Сколково» (вошедшей в\u00A0рейтинг лучших бизнес-школ мира Eduniversal\u00A02024)',
         en: 'CEO of the\u00A0National ESG Alliance and former president of the\u00A0Skolkovo Moscow School of\u00A0Management (which was included in the\u00A0Eduniversal\u00A02024 ranking of the\u00A0world\'s best business schools)',
       },
     },

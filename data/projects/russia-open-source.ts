@@ -8,7 +8,7 @@ export const russiaOpenSource: Project = {
   cover: '/projects/russia-open-source-summit/cover.jpg',
   title: { ru: 'Russia Open Source Summit', en: 'Russia Open Source Summit' },
   description: {
-    ru: 'Серия офлайн-событий медиапроекта «РБК Визионеры» о\u00A0людях, которые формируют будущее бизнеса, технологий и\u00A0культуры',
+    ru: 'Саммит российского open\u00A0source-сообщества о\u00A0будущем открытого кода и\u00A0технологий',
     en: 'A\u00A0premier ecosystem showcase for the\u00A0open-source community, centering on the\u00A0future of\u00A0code and open technologies.',
   },
   stats: [
@@ -22,10 +22,10 @@ export const russiaOpenSource: Project = {
     },
   ],
   cities: { ru: 'Москва', en: 'Moscow' },
-  format: { ru: 'онлайн+офлайн', en: 'offline+online' },
-  year: '2024',
+  format: { ru: 'онлайн + офлайн', en: 'offline + online' },
+  year: '2021',
   task: {
-    ru: 'Собрать на\u00A0одной площадке разработчиков, ИТ-компании, популяризаторов открытого программного кода / open source и\u00A0GitHub-контрибьюторов.\n\nВыстроить предметный диалог бизнеса, государства и\u00A0сообщества разработчиков о\u00A0развитии открытого кода / open source в\u00A0России',
+    ru: 'Собрать на\u00A0одной площадке разработчиков, ИТ-компании, популяризаторов открытого кода / open source и\u00A0GitHub-контрибьюторов.\n\nВыстроить предметный диалог бизнеса, государства и\u00A0сообщества разработчиков о\u00A0развитии открытого кода / open source в\u00A0России',
     en: 'Ecosystem Showcase: Unite developers, tech corporations, and GitHub contributors in\u00A0one venue\n\nStrategic Dialogue: Drive regional open-source growth through corporate-government-community alignment',
   },
   result: {

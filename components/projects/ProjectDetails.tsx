@@ -1,14 +1,16 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import type { Project } from '@/data/types';
 import { ProjectGallery } from './ProjectGallery';
+import { GlassArrow } from '../ui/GlassArrow';
 
 type Props = {
   project: Project;
   locale: 'ru' | 'en';
+  onClose: () => void;
 };
 
 // Размеры по двум точкам (375px → 1920px)
@@ -49,14 +51,18 @@ function statHeightRatio(stat: Project['stats'][number]): number {
   return RATIO_BY_LEN[Math.min(Math.max(len, 1), 5)] ?? 0.57;
 }
 
-export function ProjectDetails({ project, locale }: Props) {
+export function ProjectDetails({ project, locale, onClose }: Props) {
   const t = useTranslations('projectDetails');
 
   // Максимум 4 блока статистики
   const stats = project.stats.slice(0, 4);
 
+  const partnerLogos =
+    locale === 'en' && project.partnerLogoEn?.length
+      ? project.partnerLogoEn
+      : project.partnerLogo;
+
   return (
-    <AnimatePresence mode="wait">
       <motion.div
         key={project.id}
         initial={{ opacity: 0, y: 20 }}
@@ -65,6 +71,23 @@ export function ProjectDetails({ project, locale }: Props) {
         transition={{ duration: 0.4 }}
         className="mt-24"
       >
+      <style>{`
+        @media (max-width: 1023.98px) {
+          .pd-blocks {
+            display: grid;
+            grid-template-columns: max-content minmax(0, 1fr);
+            column-gap: clamp(8px, 2vw, 16px);
+            row-gap: clamp(32px, 4vw, 80px);
+          }
+          .pd-block { display: contents; }
+          .pd-block > h3 {
+            margin-bottom: 0;
+            margin-top: calc(0.25 * (${fluidBody} - ${fluidSectionTitle}));
+            white-space: nowrap;
+          }
+          .pd-block > p { padding-left: 0 !important; }
+        }
+      `}</style>
         {/* БАННЕР */}
         <div className="relative bg-ink text-white aspect-[402/261] lg:aspect-auto lg:min-h-svh overflow-hidden flex flex-col">
           <Image
@@ -90,7 +113,7 @@ export function ProjectDetails({ project, locale }: Props) {
               {project.title[locale]}
             </h2>
 
-            {(project.coverSubtitle || project.description || project.partnerLogo) && (
+            {(project.coverSubtitle || project.description || partnerLogos?.length) && (
               <div className="text-left flex flex-col gap-2 md:gap-4 max-w-[50%] ml-auto self-end">
                 {project.coverSubtitle && (
                   <p className="font-mono" style={{ fontSize: fluidDesc, lineHeight: 1.4 }}>
@@ -102,9 +125,9 @@ export function ProjectDetails({ project, locale }: Props) {
                     {project.description[locale]}
                   </p>
                 )}
-                {project.partnerLogo && (
+                {partnerLogos && partnerLogos.length > 0 && (
                   <div className="flex items-center gap-4 flex-wrap">
-                    {project.partnerLogo.map((logo, index) => (
+                    {partnerLogos.map((logo, index) => (
                       <div
                         key={index}
                         style={{
@@ -159,7 +182,7 @@ export function ProjectDetails({ project, locale }: Props) {
                       }}
                     >
                       <div
-                        className="font-sans font-medium"
+                        className="font-mono font-medium"
                         style={{
                           fontSize: fluidStatValue,
                           lineHeight: 1,
@@ -195,7 +218,7 @@ export function ProjectDetails({ project, locale }: Props) {
               marginBottom: 'clamp(24px, 4vw, 80px)',
             }}
           >
-            ({project.cities[locale]} — {project.year} — {project.format[locale]})
+            ({project.cities[locale]} — {project.year} — {project.format[locale].replace(/\s*\+\s*/g, '+')})
           </p>
 
           {/*
@@ -214,7 +237,8 @@ export function ProjectDetails({ project, locale }: Props) {
           >
             {/* Текст — задача, результат, команда */}
             <div className="order-1 lg:order-none lg:col-start-1 lg:row-start-1 flex flex-col gap-[clamp(32px,4vw,80px)]">
-              <div>
+              <div className="pd-blocks contents lg:contents">
+              <div className="pd-block">
                 <h3
                   className="font-mono font-bold uppercase mb-4"
                   style={{ fontSize: fluidSectionTitle }}
@@ -233,7 +257,7 @@ export function ProjectDetails({ project, locale }: Props) {
                 </p>
               </div>
 
-              <div>
+              <div className="pd-block">
                 <h3
                   className="font-mono font-bold uppercase mb-4"
                   style={{ fontSize: fluidSectionTitle }}
@@ -251,7 +275,7 @@ export function ProjectDetails({ project, locale }: Props) {
                   {project.result[locale]}
                 </p>
               </div>
-
+              </div>
               {project.team && project.team.length > 0 && (
                 <ul className="flex flex-col gap-4">
                   {project.team.map((member, i) => (
@@ -323,7 +347,24 @@ export function ProjectDetails({ project, locale }: Props) {
             )}
           </div>
         </div>
+       <div
+  className="flex justify-center"
+  style={{ marginTop: 'clamp(32px, 4vw, 80px)' }}
+>
+  <div
+    className="relative flex items-center justify-center rounded-full bg-[#F2F2F2]"
+    style={{
+      width: 'clamp(48px, 6vw, 72px)',
+      height: 'clamp(48px, 6vw, 72px)',
+    }}
+  >
+    <GlassArrow
+      direction="up"
+      onClick={onClose}
+      place="close"
+    />
+  </div>
+</div>
       </motion.div>
-    </AnimatePresence>
   );
 }

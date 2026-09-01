@@ -22,9 +22,9 @@ export const cartierArtDialogues: Project = {
       heightPx: 453,
     },
   ],
-  cities: { ru: 'Санкт-П.', en: 'St.\u00A0Petersburg' },
-  format: { ru: 'онлайн+офлайн', en: 'online+offline' },
-  year: '2025',
+  cities: { ru: 'Санкт-Петербург', en: 'St.\u00A0Petersburg' },
+  format: { ru: 'онлайн + офлайн', en: 'online + offline' },
+  year: '2021',
   task: {
     ru: 'Разработать деловую программу международной конференции в\u00A0Эрмитаже: задать рамку разговора о\u00A0«живом наследии» и\u00A0будущем искусства.\n\nСобрать на\u00A0одной площадке директоров музеев, кураторов, художников, музыкантов и\u00A0архитекторов с\u00A0мировым именем',
     en: 'Curatorial Framework: Design an\u00A0international conference narrative at the\u00A0Hermitage on\u00A0"living heritage" and the\u00A0future of\u00A0art\n\nGlobal Network: Convene world-renowned museum directors, artists, and architects in\u00A0one venue',

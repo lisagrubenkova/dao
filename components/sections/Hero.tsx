@@ -68,7 +68,7 @@ export function Hero() {
               type="button"
               onClick={() => setMenuOpen(true)}
               aria-label="Открыть меню"
-              className="md:hidden absolute left-0 top-1/2 -translate-y-1/2 flex flex-col gap-2 p-1"
+              className="md:hidden absolute left-0 top-1/2 -translate-y-1/2 flex flex-col gap-1 p-1"
             >
               <span className="block w-8 h-[2px] bg-ink" />
               <span className="block w-8 h-[2px] bg-ink" />
@@ -140,7 +140,7 @@ export function Hero() {
               onClick={() => setMenuOpen(false)}
             />
             <motion.nav
-              className="md:hidden fixed top-0 left-0 z-50 h-full w-[82%] max-w-[360px] bg-bg flex flex-col justify-around pr-6"
+              className="md:hidden fixed top-0 left-0 z-50 h-full w-[82%] max-w-[360px] bg-bg-alt flex flex-col justify-around pr-6"
               initial={{ x: '-100%' }}
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}

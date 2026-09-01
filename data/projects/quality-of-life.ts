@@ -9,7 +9,7 @@ export const qualityOfLife: Project = {
   title: { ru: 'Качество жизни', en: 'Quality of life' },
   partnerLogo: [{ src: '/logos/rbc.svg', width: 190, height: 51 }, { src: '/logos/tbank-private.svg', width: 319, height: 55 }],
   description: {
-    ru: 'публичная программа о\u00A0благополучии и\u00A0инвестициях в\u00A0себя: от\u00A0физического здоровья до\u00A0гармонии с\u00A0окружающим пространством',
+    ru: 'публичная программа о\u00A0благополучии и\u00A0инвестициях в\u00A0себя: от\u00A0физического здоровья до\u00A0гармонии с\u00A0окружающим\u00A0пространством',
     en: 'Public Program on\u00A0wellbeing as a\u00A0strategy for modern life\u00A0— from health and longevity to\u00A0mental balance, personal capital and the\u00A0spaces we live\u00A0in',
   },
   stats: [

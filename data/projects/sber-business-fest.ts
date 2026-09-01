@@ -14,7 +14,7 @@ export const sberBusinessFest: Project = {
   },
   stats: [
     { value: '10000', label: { ru: 'участников офлайн и\u00A0онлайн', en: 'hybrid attendees' }, heightPx: 453 },
-    { value: '1000+', label: { ru: 'гостей на\u00A0площадке в\u00A0каждом городе', en: 'on-site attendees per city' }, heightPx: 709 },
+    { value: '1000+', label: { ru: 'гостей на\u00A0площадке\nв\u00A0каждом городе', en: 'on-site attendees per city' }, heightPx: 709 },
     { value: '11', label: { ru: 'городов России', en: 'cities' }, heightPx: 539 },
   ],
   cities: { ru: '11\u00A0городов', en: '11\u00A0cities' },

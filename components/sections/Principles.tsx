@@ -17,8 +17,8 @@ export function Principles() {
   return (
     <section id="principles" className="bg-bg pt-section-y">
       <h2
-        className="font-sans font-medium px-section-x mb-gap-lg"
-        style={{ fontSize: 'clamp(40px, 4vw + 1rem, 120px)' }}
+        className="font-sans font-medium px-section-x mb-gap-sm"
+        style={{ fontSize: 'clamp(40px, 3vw + 1rem, 120px)' }}
       >
         {t('title')}
       </h2>

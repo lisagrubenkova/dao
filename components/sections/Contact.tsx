@@ -26,7 +26,7 @@ export function Contact() {
     <section id="contact" className="bg-bg py-section-y px-section-x">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-gap-md">
         {/* Заголовок */}
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-7 lg:self-baseline">
           <h2
             className="font-sans font-medium"
             style={{ fontSize: 'clamp(40px, 4vw + 1rem, 120px)' }}
@@ -36,7 +36,7 @@ export function Contact() {
         </div>
 
         {/* Email + copy справа сверху */}
-        <div className="order-last lg:order-none lg:col-span-5 flex lg:justify-end lg:items-start lg:pt-6">
+        <div className="order-last lg:order-none lg:col-span-5 flex lg:justify-end lg:self-baseline">
           <div
             className="inline-flex items-center gap-3 text-mail"
             style={{ fontSize: fluidEmail }}

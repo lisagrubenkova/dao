@@ -39,11 +39,13 @@ export function AlgorithmStep({ number, title, description, isActive }: Props) {
       </div>
 
       {/* Точка */}
-      <div
-        className={`rounded-full bg-ink transition-all duration-500 ${
-          isActive ? 'w-2 h-2' : 'w-1.5 h-1.5'
-        }`}
-      />
+      <div className="w-2 h-2 flex items-center justify-center">
+        <div
+          className={`rounded-full bg-ink transition-all duration-500 ${
+            isActive ? 'w-2 h-2' : 'w-1.5 h-1.5'
+          }`}
+        />
+      </div>
 
       <div className="h-6" />
 

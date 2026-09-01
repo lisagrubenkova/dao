@@ -5,23 +5,27 @@ export const rbcVisionariesCommunity: Project = {
   slug: 'rbc-visionaries-community',
   top: true,
   thumbnail: '/projects/rbc-visionaries-community/thumb.jpg',
+  thumbnail_title: {
+    ru: 'РБК Визионеры. Сообщество',
+    en: 'RBС visionaries community',
+  },
   cover: '/projects/rbc-visionaries-community/cover.jpg',
   title: {
-    ru: 'Развитие проекта «РБК Визионеры. сообщество»',
+    ru: 'Развитие проекта \n«РБК Визионеры. Cообщество»',
     en: 'Developing the\u00A0‘RBC Visionaries. Community’ ecosystem',
   },
   partnerLogo: [
     { src: '/logos/rbc.svg', width: 190, height: 51 }
   ],
   description: {
-    ru: 'стратегическое развитие онлайн-проекта «РБК Визионеры.сообщество»',
+    ru: 'стратегическое развитие\nонлайн-проекта «РБК Визионеры.сообщество»',
     en: 'Strategic growth of the\u00A0“RBC Visionaries.Community” digital initiative',
   },
   stats: [
     {
       value: '150+',
       label: {
-        ru: 'участников проекта "РБК Визионеры. Сообщество"',
+        ru: 'участников проекта \n"РБК Визионеры. Сообщество"',
         en: '‘RBC Visionaries.Community’ members',
       },
       heightPx: 453,

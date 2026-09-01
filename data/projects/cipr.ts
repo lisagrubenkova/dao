@@ -13,21 +13,21 @@ export const cipr: Project = {
     en: 'The\u00A0definitive B2B forum focusing on the\u00A0digital economy and industrial transformation',
   },
   stats: [
-    { value: '6000', label: { ru: 'участников', en: 'attendees' }, heightPx: 453 },
-    { value: '500+', label: { ru: 'спикеров', en: 'speakers' }, heightPx: 709 },
-    { value: '70+', label: { ru: 'сессий деловой программы', en: 'programming sessions' }, heightPx: 539 },
+    { value: '6000', label: { ru: 'участников', en: 'attendees' }, heightPx: 423 },
+    { value: '500+', label: { ru: 'спикеров', en: 'speakers' }, heightPx: 649 },
+    { value: '70+', label: { ru: 'сессий деловой программы', en: 'programming sessions' }, heightPx: 519 },
     {
       value: '2',
       label: {
         ru: 'онлайн-города проведения: Казань и\u00A0Нижний\u00A0Новгород',
         en: '2\u00A0host cities: Kazan\u00A0&\u00A0Nizhny\u00A0Novgorod',
       },
-      heightPx: 453,
+      heightPx: 423,
     },
   ],
-  cities: { ru: 'Казань+Н.Новгород', en: 'Kazan+N.Novgorod' },
-  format: { ru: 'онлайн+офлайн', en: 'online+offline' },
-  year: '2024',
+  cities: { ru: 'Казань + Н.Новгород', en: 'Kazan + N.Novgorod' },
+  format: { ru: 'онлайн + офлайн', en: 'online + offline' },
+  year: '2019-2020',
   task: {
     ru: 'Спродюсировать деловую программу, охватывающую широкую палитру тем, посвящённых цифровой трансформации экономики',
     en: 'Digital Transformation: Produce a\u00A0comprehensive business programming framework focused on\u00A0economic digitalization',
@@ -37,9 +37,9 @@ export const cipr: Project = {
     en: 'Cross-Sector Tracks: Developed specialized programming across key industries (IT, Telecom, Agriculture, Media, Tourism, and Cybersecurity)\n\nEnd-to-End Production: Managed the\u00A0"Digital Industry of Industrial Russia_Innovations" track from startup scouting to\u00A0live pitches',
   },
   gallery: [
-    { src: '/projects/cipr/1.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
-    { src: '/projects/cipr/2.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
-    { src: '/projects/cipr/3.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
-    { src: '/projects/cipr/4.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
+    { src: '/projects/cipr/1.jpg' },
+    { src: '/projects/cipr/2.jpg' },
+    { src: '/projects/cipr/3.jpg' },
+    { src: '/projects/cipr/4.jpg' },
   ],
 };
