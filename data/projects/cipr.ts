@@ -27,19 +27,19 @@ export const cipr: Project = {
   ],
   cities: { ru: 'Казань + Н.Новгород', en: 'Kazan + N.Novgorod' },
   format: { ru: 'онлайн + офлайн', en: 'online + offline' },
-  year: '2019-2020',
+  year: '2019-2022',
   task: {
     ru: 'Спродюсировать деловую программу, охватывающую широкую палитру тем, посвящённых цифровой трансформации экономики',
     en: 'Digital Transformation: Produce a\u00A0comprehensive business programming framework focused on\u00A0economic digitalization',
   },
   result: {
-    ru: 'Программа включала разделы по\u00A0ключевым индустриям: от\u00A0сельского хозяйства, ИТ, телекоммуникаций, туризма, медиа и\u00A0креативных индустрий до\u00A0кибербезопасности и\u00A0защиты критической инфраструктуры.\n\nСборка под\u00A0ключ отдельного трека «ЦИПР_Инновации»: от\u00A0скаутинга стартапов, подбора и\u00A0приглашения экспертов жюри до\u00A0непосредственно презентаций',
+    ru: 'Программа включала разделы по\u00A0ключевым индустриям: от\u00A0сельского хозяйства, ИТ, телекоммуникаций, туризма, медиа и\u00A0креативных индустрий до\u00A0кибербезопасности и\u00A0защиты критической инфраструктуры\n\nСборка под\u00A0ключ отдельного трека «ЦИПР_Инновации»: от\u00A0скаутинга стартапов, подбора и\u00A0приглашения экспертов жюри до\u00A0непосредственно презентаций',
     en: 'Cross-Sector Tracks: Developed specialized programming across key industries (IT, Telecom, Agriculture, Media, Tourism, and Cybersecurity)\n\nEnd-to-End Production: Managed the\u00A0"Digital Industry of Industrial Russia_Innovations" track from startup scouting to\u00A0live pitches',
   },
   gallery: [
-    { src: '/projects/cipr/1.jpg' },
-    { src: '/projects/cipr/2.jpg' },
-    { src: '/projects/cipr/3.jpg' },
-    { src: '/projects/cipr/4.jpg' },
+    { src: '/projects/cipr/1.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/cipr/2.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/cipr/3.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/cipr/4.jpg', credit: {ru: '', en: "ph: dao team"} },
   ],
 };

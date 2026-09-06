@@ -30,7 +30,7 @@ export const cartierArtDialogues: Project = {
     en: 'Curatorial Framework: Design an\u00A0international conference narrative at the\u00A0Hermitage on\u00A0"living heritage" and the\u00A0future of\u00A0art\n\nGlobal Network: Convene world-renowned museum directors, artists, and architects in\u00A0one venue',
   },
   result: {
-    ru: 'Двухдневная программа лекций, диалогов и\u00A0дискуссий с\u00A0ключевыми представителями музейного и\u00A0художественного мира.\n\nКонференция усилила роль Эрмитажа и\u00A0Cartier в\u00A0повестке о\u00A0том, как работать с\u00A0наследием сегодня и\u00A0проектировать будущее искусства',
+    ru: 'Двухдневная программа лекций, диалогов и\u00A0дискуссий с\u00A0ключевыми представителями музейного и\u00A0художественного мира\n\nКонференция усилила роль Эрмитажа и\u00A0Cartier в\u00A0повестке о\u00A0том, как работать с\u00A0наследием сегодня и\u00A0проектировать будущее искусства',
     en: '2-Day Public Track: Executed curated lectures, panels, and dialogues across the\u00A0art sector\n\nCultural Authority: Partnered with Cartier and the\u00A0State Hermitage Museum to\u00A0set the\u00A0global agenda on\u00A0heritage preservation',
   },
   team: [
@@ -90,8 +90,8 @@ export const cartierArtDialogues: Project = {
     { logo: '/logos/fondation-cartier.svg', name: 'Fondation\u00A0Cartier', url: 'https://www.fondationcartier.com', width: 415, height: 91 },
   ],
   gallery: [
-    { src: '/projects/cartier-art-dialogues/1.jpg'},
-    { src: '/projects/cartier-art-dialogues/2.jpg' },
-    { src: '/projects/cartier-art-dialogues/3.jpg' },
+    { src: '/projects/cartier-art-dialogues/1.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/cartier-art-dialogues/2.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/cartier-art-dialogues/3.jpg', credit: {ru: '', en: "ph: dao team"} },
   ],
 };

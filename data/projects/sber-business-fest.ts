@@ -9,7 +9,7 @@ export const sberBusinessFest: Project = {
   title: { ru: 'Сбер Бизнес-Фест 2024', en: 'Sber Business FEST 2024' },
   partnerLogo: [{ src: '/logos/sber.svg', width: 250, height: 68 }],
   description: {
-    ru: 'флагманский фестиваль для\u00A0предпринимателей и\u00A0тех, кто\u00A0хочет начать своё дело',
+    ru: 'Флагманский фестиваль для\u00A0предпринимателей и\u00A0тех, кто\u00A0хочет начать своё дело',
     en: 'A\u00A0multi-city offline festival by SberBusiness, designed to\u00A0support entrepreneurs with practical business content, founder cases, mentoring, networking and local business connections',
   },
   stats: [
@@ -26,7 +26,7 @@ export const sberBusinessFest: Project = {
   },
   result: {
     ru: 'Исследование предпринимательского контекста каждого города и\u00A0архитектура модульной программы: главная сцена, треки, экспертные сессии и\u00A0нетворкинг-зоны.\n\nПодбор федеральных и\u00A0локальных спикеров, продюсирование форматов и\u00A0сопровождение фестиваля на\u00A011\u00A0площадках.\n\nФестиваль закрепился как флагманская площадка Сбера для\u00A0МСП в\u00A0регионах',
-    en: 'Data-Driven Architecture: Localized research used to\u00A0build modular programming (main stage, tracks, mentorship)\n\nEnd-to-End Production: Speaker curation and full on-site execution across all 11\u00A0locations\n\nFlagship Status: Established the\u00A0project as\u00A0Sber’s core regional and cultural platform\n\nFlagship Status: Established the\u00A0project as\u00A0Sber’s core regional and cultural platform',
+    en: 'Data-Driven Architecture: Localized research used to\u00A0build modular programming (main stage, tracks, mentorship)\n\nEnd-to-End Production: Speaker curation and full on-site execution across all 11\u00A0locations\n\nFlagship Status: Established the\u00A0project as\u00A0Sber’s core regional and cultural platform',
   },
   gallery: [
     { src: '/projects/sber-business-fest/1.jpg', credit: { ru: 'фото: Виталий\u00A0Бурдаков', en: 'ph: Vitaly\u00A0Burdakov' } },

@@ -45,7 +45,8 @@ export const moscowStartupSummit: Project = {
     },
     {
       value: '50млн+',
-      label: { ru: 'онлайн-просмотров', en: 'million online views' },
+      valueEn: '50m+',
+      label: { ru: 'онлайн-просмотров', en: 'online views' },
       heightPx: 453,
     },
   ],
@@ -53,7 +54,7 @@ export const moscowStartupSummit: Project = {
   format: { ru: 'онлайн + офлайн', en: 'offline + online' },
   year: '2025',
   task: {
-    ru: 'Сделать саммит флагманским мероприятием по\u00A0венчурному предпринимательству.\n\nСоздать программу, в\u00A0которой форматы и\u00A0нетворкинг приводят к\u00A0запуску пилотов и\u00A0сделок',
+    ru: 'Сделать саммит флагманским мероприятием по\u00A0венчурному предпринимательству\n\nСоздать программу, в\u00A0которой форматы и\u00A0нетворкинг приводят к\u00A0запуску пилотов и\u00A0сделок',
     en: 'Benchmark Showcase: Position the\u00A0summit as a\u00A0leading venture ecosystem event\n\nValue-Driven: Focused on\u00A0networking, experimentation, and real business outcomes',
   },
   result: {
@@ -61,11 +62,11 @@ export const moscowStartupSummit: Project = {
     en: '5-Track Framework: Corporate reverse pitches and matchmaking to\u00A0drive commercial pilots',
   },
   gallery: [
-    { src: '/projects/moscow-startup-summit/1.jpg' },
-    { src: '/projects/moscow-startup-summit/2.jpg' },
-    { src: '/projects/moscow-startup-summit/3.jpg' },
-    { src: '/projects/moscow-startup-summit/4.jpg' },
-    { src: '/projects/moscow-startup-summit/5.jpg' },
+    { src: '/projects/moscow-startup-summit/1.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/moscow-startup-summit/2.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/moscow-startup-summit/3.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/moscow-startup-summit/4.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/moscow-startup-summit/5.jpg', credit: {ru: '', en: "ph: dao team"} },
   ],
   partners: [
     { logo: '/logos/gero.svg', name: 'gero', url: '', width: 221, height: 55 },

@@ -2,6 +2,7 @@ export type LocalizedText = { ru: string; en: string };
 
 export type ProjectStat = {
   value: string;
+  valueEn?: string;
   label: LocalizedText;
   heightPx?: number;
 };
@@ -42,7 +43,7 @@ export type Project = {
     src: string;
     width: number;
     height: number;
-  }[];
+  }[] | null;
   description?: LocalizedText;
   stats: ProjectStat[];
   cities: LocalizedText;

@@ -8,6 +8,7 @@ export const moscowTravelHub: Project = {
   cover: '/projects/moscow-travel-hub/cover.jpg',
   title: { ru: 'Акселератор Moscow Travel hub', en: 'Moscow Travel hub Accelerator' },
   partnerLogo: [{ src: '/logos/rbc.svg', width: 221, height: 60 }],
+  partnerLogoEn: null,
   description: {
     ru: 'Акселерационная программа по созданию и\u00A0запуску новых продуктов, сервисов и\u00A0ИТ\u2011решений в\u00A0сфере туризма и\u00A0гостеприимства',
     en: 'An intensive acceleration initiative driving product development, ecosystem services, and\u00A0tech innovations for\u00A0the\u00A0hospitality and\u00A0tourism industry',
@@ -30,9 +31,9 @@ export const moscowTravelHub: Project = {
     en: 'End-to-End Acceleration: Developed the\u00A0concept, scouting pipeline, and\u00A0tracking framework for\u00A0startups\n\nCorporate Hackathons: Executed enterprise-backed hackathons solving real industry challenges\n\nKnowledge Repository: Built a\u00A0digital hub with\u00A0educational insights and\u00A0media content',
   },
   gallery: [
-    { src: '/projects/moscow-travel-hub/1.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
-    { src: '/projects/moscow-travel-hub/2.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
-    { src: '/projects/moscow-travel-hub/3.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
-    { src: '/projects/moscow-travel-hub/4.jpg', credit: { ru: 'фото: dao\u00A0Кteam', en: 'ph: dao\u00A0team' } },
+    { src: '/projects/moscow-travel-hub/1.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/moscow-travel-hub/2.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/moscow-travel-hub/3.jpg', credit: {ru: '', en: "ph: dao team"} },
+    { src: '/projects/moscow-travel-hub/4.jpg', credit: {ru: '', en: "ph: dao team"} },
   ],
 };

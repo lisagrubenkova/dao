@@ -11,13 +11,13 @@ export const rbcVisionariesPublic: Project = {
   },
   cover: '/projects/rbc-visionaries-public/cover.jpg',
   title: {
-    ru: 'РБК Визионеры. Публичная программа.',
+    ru: 'РБК Визионеры. Публичная программа',
     en: 'RBС visionaries public programming',
   },
   partnerLogo: [{ src: '/logos/rbc.svg', width: 221, height: 60 }],
   description: {
     ru: 'Серия офлайн-событий медиапроекта «РБК Визионеры» о\u00A0людях, которые формируют\nбудущее бизнеса, технологий и\u00A0культуры',
-    en: 'A\u00A0series of\u00A0offline activations for RBC Visionaries\u00A0— RBc’s annual cross-disciplinary list spotlighting people shaping the\u00A0future of\u00A0business, technology, culture and lifestyle',
+    en: 'A\u00A0series of\u00A0offline activations for RBC Visionaries\u00A0— RBC’s annual cross-disciplinary list spotlighting people shaping the\u00A0future of\u00A0business, technology, culture and lifestyle',
   },
   stats: [
     {

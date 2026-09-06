@@ -57,10 +57,12 @@ export function ProjectDetails({ project, locale, onClose }: Props) {
   // Максимум 4 блока статистики
   const stats = project.stats.slice(0, 4);
 
-  const partnerLogos =
-    locale === 'en' && project.partnerLogoEn?.length
-      ? project.partnerLogoEn
-      : project.partnerLogo;
+const partnerLogos =
+  locale === 'en'
+    ? project.partnerLogoEn === undefined
+      ? project.partnerLogo        // поле не заполнено → берём общие лого
+      : project.partnerLogoEn ?? [] // null или [] → ничего не показываем
+    : project.partnerLogo;
 
   return (
       <motion.div
@@ -189,7 +191,7 @@ export function ProjectDetails({ project, locale, onClose }: Props) {
                           whiteSpace: 'nowrap',
                         }}
                       >
-                        {stat.value}
+                        {locale === 'en' ? stat.valueEn ?? stat.value : stat.value}
                       </div>
                       <div
                         className="font-mono opacity-90"
