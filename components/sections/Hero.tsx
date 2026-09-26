@@ -1,10 +1,10 @@
 // Hero.tsx
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
-import { Logo } from '@/components/ui/Logo';
+import { Logo, LOGO_DRAW_MS } from '@/components/ui/Logo';
 import { AnimatedLine } from '@/components/ui/AnimatedLine';
 import { AnimatedRow } from '@/components/ui/AnimatedRow';
 import { useIntro } from '@/context/IntroContext';
@@ -20,19 +20,37 @@ export function Hero() {
   const [phase, setPhase] = useState<'intro' | 'content'>('intro');
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const goToContent = () => {
+  const goToContent = useCallback(() => {
     setPhase('content');
     setIntroDone(true);
-  };
+  }, [setIntroDone]);
 
   useEffect(() => {
-    const timer = setTimeout(() => setPhase('content'), 2500);
+    // При системной настройке «уменьшить движение» логотип показывается
+    // сразу целиком, поэтому держать интро полторы секунды незачем.
+    const reduced =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const delay = reduced ? 700 : LOGO_DRAW_MS + 600;
+    const timer = setTimeout(goToContent, delay);
     return () => clearTimeout(timer);
-  }, []);
+  }, [goToContent]);
 
   const isIntro = phase === 'intro';
+  const isEn = locale === 'en';
   const logoTransition = { duration: 1.1, ease: [0.22, 1, 0.36, 1] as const };
-  const portfolioSrc = locale === 'en' ? '/dao-portfolio-en.pdf' : '/dao-portfolio-ru.pdf';
+
+  // Пропорции локалей разные: ru 1345×400, en 1106×605.
+  // Ширины подобраны так, чтобы высота логотипа совпадала в обеих версиях.
+  const logoWidthIntro = isEn
+    ? 'w-[clamp(180px,34vw,560px)]'
+    : 'w-[clamp(280px,55vw,900px)]';
+  const logoWidthTop = isEn
+    ? 'w-[clamp(62px,10vw,196px)]'
+    : 'w-[clamp(98px,16.5vw,318px)]';
+
+  const portfolioSrc = isEn ? '/dao-portfolio-en.pdf' : '/dao-portfolio-ru.pdf';
   const menuItems = [
     { label: tMenu('about'), href: '#about' },
     { label: tMenu('algorithm'), href: '#algorithm' },
@@ -52,9 +70,9 @@ export function Hero() {
           <motion.div
             layoutId="brand-logo"
             transition={logoTransition}
-            className="w-[clamp(280px,55vw,900px)]"
+            className={logoWidthIntro}
           >
-            <Logo className="w-full h-auto" />
+            <Logo className="w-full h-auto text-[#DC1418]" animate />
           </motion.div>
         </div>
       )}
@@ -67,7 +85,7 @@ export function Hero() {
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
-              aria-label="Открыть меню"
+              aria-label={tMenu('openMenu')}
               className="md:hidden absolute left-0 top-1/2 -translate-y-1/2 flex flex-col gap-1 p-1"
             >
               <span className="block w-8 h-[2px] bg-ink" />
@@ -78,11 +96,12 @@ export function Hero() {
             <motion.div
               layoutId="brand-logo"
               transition={logoTransition}
-              className="w-[clamp(98px,16.5vw,318px)]"
+              className={logoWidthTop}
             >
-              <Logo className="w-full h-auto" />
+              <Logo className="w-full h-auto text-[#DC1418]" />
             </motion.div>
-             <motion.div
+
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.6, ease: 'easeOut' }}
