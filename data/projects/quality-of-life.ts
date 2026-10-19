@@ -7,9 +7,9 @@ export const qualityOfLife: Project = {
   thumbnail: '/projects/quality-of-life/thumb.jpg',
   cover: '/projects/quality-of-life/cover.jpg',
   title: { ru: 'Качество жизни', en: 'Quality of life' },
-  partnerLogo: [{ src: '/logos/rbc.svg', width: 190, height: 51 }, { src: '/logos/tbank-private.svg', width: 319, height: 55 }],
+  // partnerLogo: [{ src: '/logos/rbc.svg', width: 190, height: 51 }, { src: '/logos/tbank-private.svg', width: 319, height: 55 }],
   description: {
-    ru: 'публичная программа о\u00A0благополучии и\u00A0инвестициях в\u00A0себя: от\u00A0физического здоровья до\u00A0гармонии с\u00A0окружающим\u00A0пространством',
+    ru: 'Публичная программа о\u00A0благополучии и\u00A0инвестициях в\u00A0себя: от\u00A0физического здоровья до\u00A0гармонии с\u00A0окружающим\u00A0пространством',
     en: 'Public Program on\u00A0wellbeing as a\u00A0strategy for modern life\u00A0— from health and longevity to\u00A0mental balance, personal capital and the\u00A0spaces we live\u00A0in',
   },
   stats: [
@@ -56,9 +56,9 @@ export const qualityOfLife: Project = {
       },
     },
   ],
-  partners: [
-    { logo: '/logos/tbank-private.svg', name: 'Private\u00A0— премиальный сервис Т-Банка', url: 'https://www.tbank.ru/private', width: 202, height: 34 },
-  ],
+  // partners: [
+  //   { logo: '/logos/tbank-private.svg', name: 'Private\u00A0— премиальный сервис Т-Банка', url: 'https://www.tbank.ru/private', width: 202, height: 34 },
+  // ],
   gallery: [
     { src: '/projects/quality-of-life/1.jpg', credit: { ru: 'фото: Николай\u00A0Казеев', en: 'ph: Nikolay\u00A0Kazeev' } },
     { src: '/projects/quality-of-life/2.jpg', credit: { ru: 'фото: Николай\u00A0Казеев', en: 'ph: Nikolay\u00A0Kazeev' } },

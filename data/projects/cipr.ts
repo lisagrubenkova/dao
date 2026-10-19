@@ -7,7 +7,7 @@ export const cipr: Project = {
   thumbnail: '/projects/cipr/thumb.jpg',
   cover: '/projects/cipr/cover.jpg',
   title: { ru: 'ЦИПР', en: 'Digital Industry of Industrial Russia' },
-  partnerLogo: [{ src: '/logos/cipr-darkside.svg', width: 643, height: 89 }],
+  // partnerLogo: [{ src: '/logos/cipr-darkside.svg', width: 643, height: 89 }],
   description: {
     ru: 'Форум о\u00A0цифровой экономике и\u00A0промышленной трансформации для\u00A0государства и\u00A0бизнеса',
     en: 'The\u00A0definitive B2B forum focusing on the\u00A0digital economy and industrial transformation',

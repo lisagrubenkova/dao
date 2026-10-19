@@ -7,7 +7,7 @@ export const cartierArtDialogues: Project = {
   thumbnail: '/projects/cartier-art-dialogues/thumb.jpg',
   cover: '/projects/cartier-art-dialogues/cover.jpg',
   title: { ru: 'Cartier art dialogues', en: 'Cartier art dialogues' },
-  partnerLogo: [{ src: '/logos/cartier-hermitage.svg', width: 441, height: 161 }],
+  // partnerLogo: [{ src: '/logos/cartier-hermitage.svg', width: 441, height: 161 }],
   description: {
     ru: 'Публичная программа в\u00A0Эрмитаже',
     en: 'Public Programming / The\u00A0State Hermitage Museum',
@@ -26,7 +26,7 @@ export const cartierArtDialogues: Project = {
   format: { ru: 'онлайн + офлайн', en: 'online + offline' },
   year: '2021',
   task: {
-    ru: 'Разработать деловую программу международной конференции в\u00A0Эрмитаже: задать рамку разговора о\u00A0«живом наследии» и\u00A0будущем искусства.\n\nСобрать на\u00A0одной площадке директоров музеев, кураторов, художников, музыкантов и\u00A0архитекторов с\u00A0мировым именем',
+    ru: 'Разработать деловую программу международной конференции в\u00A0Эрмитаже: задать рамку разговора о\u00A0«живом наследии» и\u00A0будущем искусства\n\nСобрать на\u00A0одной площадке директоров музеев, кураторов, художников, музыкантов и\u00A0архитекторов с\u00A0мировым именем',
     en: 'Curatorial Framework: Design an\u00A0international conference narrative at the\u00A0Hermitage on\u00A0"living heritage" and the\u00A0future of\u00A0art\n\nGlobal Network: Convene world-renowned museum directors, artists, and architects in\u00A0one venue',
   },
   result: {
@@ -82,13 +82,13 @@ export const cartierArtDialogues: Project = {
       role: { ru: 'прима-балерина Мариинского театра', en: 'Prima ballerina of the\u00A0Mariinsky Theatre' },
     },
   ],
-  partners: [
-    { logo: '/logos/artribune.svg', name: 'Artribune', url: 'https://www.artribune.com', width: 218, height: 50 },
-    { logo: '/logos/artory.svg', name: 'Artory', url: 'https://www.artory.com', width: 225, height: 34 },
-    { logo: '/logos/musicaeterna.svg', name: 'musicAeterna', url: 'https://musicaeterna.org', width: 159, height: 159 },
-    { logo: '/logos/triennale.svg', name: 'Triennale\u00A0Milano', url: 'https://triennale.org', width: 249, height: 78 },
-    { logo: '/logos/fondation-cartier.svg', name: 'Fondation\u00A0Cartier', url: 'https://www.fondationcartier.com', width: 415, height: 91 },
-  ],
+  // partners: [
+  //   { logo: '/logos/artribune.svg', name: 'Artribune', url: 'https://www.artribune.com', width: 218, height: 50 },
+  //   { logo: '/logos/artory.svg', name: 'Artory', url: 'https://www.artory.com', width: 225, height: 34 },
+  //   { logo: '/logos/musicaeterna.svg', name: 'musicAeterna', url: 'https://musicaeterna.org', width: 159, height: 159 },
+  //   { logo: '/logos/triennale.svg', name: 'Triennale\u00A0Milano', url: 'https://triennale.org', width: 249, height: 78 },
+  //   { logo: '/logos/fondation-cartier.svg', name: 'Fondation\u00A0Cartier', url: 'https://www.fondationcartier.com', width: 415, height: 91 },
+  // ],
   gallery: [
     { src: '/projects/cartier-art-dialogues/1.jpg', credit: {ru: '', en: "ph: dao team"} },
     { src: '/projects/cartier-art-dialogues/2.jpg', credit: {ru: '', en: "ph: dao team"} },

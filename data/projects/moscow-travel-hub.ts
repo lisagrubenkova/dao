@@ -7,8 +7,8 @@ export const moscowTravelHub: Project = {
   thumbnail: '/projects/moscow-travel-hub/thumb.jpg',
   cover: '/projects/moscow-travel-hub/cover.jpg',
   title: { ru: 'Акселератор Moscow Travel hub', en: 'Moscow Travel hub Accelerator' },
-  partnerLogo: [{ src: '/logos/rbc.svg', width: 221, height: 60 }],
-  partnerLogoEn: null,
+  // partnerLogo: [{ src: '/logos/rbc.svg', width: 221, height: 60 }],
+  // partnerLogoEn: null,
   description: {
     ru: 'Акселерационная программа по созданию и\u00A0запуску новых продуктов, сервисов и\u00A0ИТ\u2011решений в\u00A0сфере туризма и\u00A0гостеприимства',
     en: 'An intensive acceleration initiative driving product development, ecosystem services, and\u00A0tech innovations for\u00A0the\u00A0hospitality and\u00A0tourism industry',
@@ -27,7 +27,7 @@ export const moscowTravelHub: Project = {
     en: 'Innovation Hub: Launch a\u00A0communication platform, hackathon series, and\u00A0the\u00A0"Travel Factory" accelerator\n\nIndustry Growth: Drive tech innovation and\u00A0startup scaling within tourism and\u00A0hospitality',
   },
   result: {
-    ru: 'Концепция и\u00A0методология акселератора, структура программы и\u00A0набор инструментов трекинга, скаутинг и\u00A0отбор проектов для\u00A0акселератора. Подготовлены и\u00A0проведены презентационные сессии, привлечены и\u00A0скоординированы жюри и\u00A0эксперты.\n\nПродюсирование и\u00A0написание материалов для\u00A0коммуникационной площадки, формирование медиатеки с\u00A0материалами и\u00A0презентациями спикеров.\n\nПроведение хакатонов, решение прикладных задач индустриальных заказчиков',
+    ru: 'Концепция и\u00A0методология акселератора, структура программы и\u00A0набор инструментов трекинга, скаутинг и\u00A0отбор проектов для\u00A0акселератора. Подготовлены и\u00A0проведены презентационные сессии, привлечены и\u00A0скоординированы жюри и\u00A0эксперты\n\nПродюсирование и\u00A0написание материалов для\u00A0коммуникационной площадки, формирование медиатеки с\u00A0материалами и\u00A0презентациями спикеров\n\nПроведение хакатонов, решение прикладных задач индустриальных заказчиков',
     en: 'End-to-End Acceleration: Developed the\u00A0concept, scouting pipeline, and\u00A0tracking framework for\u00A0startups\n\nCorporate Hackathons: Executed enterprise-backed hackathons solving real industry challenges\n\nKnowledge Repository: Built a\u00A0digital hub with\u00A0educational insights and\u00A0media content',
   },
   gallery: [

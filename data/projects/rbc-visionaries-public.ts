@@ -14,7 +14,7 @@ export const rbcVisionariesPublic: Project = {
     ru: 'РБК Визионеры. Публичная программа',
     en: 'RBС visionaries public programming',
   },
-  partnerLogo: [{ src: '/logos/rbc.svg', width: 221, height: 60 }],
+  // partnerLogo: [{ src: '/logos/rbc.svg', width: 221, height: 60 }],
   description: {
     ru: 'Серия офлайн-событий медиапроекта «РБК Визионеры» о\u00A0людях, которые формируют\nбудущее бизнеса, технологий и\u00A0культуры',
     en: 'A\u00A0series of\u00A0offline activations for RBC Visionaries\u00A0— RBC’s annual cross-disciplinary list spotlighting people shaping the\u00A0future of\u00A0business, technology, culture and lifestyle',
@@ -34,7 +34,7 @@ export const rbcVisionariesPublic: Project = {
     en: 'On-Site Programming: Launch a\u00A0public event framework for the\u00A0RBC Visionaries project. Future-Focused: Spotlight leaders in\u00A0business, tech, art, and innovation',
   },
   result: {
-    ru: 'Двухдневная публичная программа с\u00A0лекциями и\u00A0открытыми дискуссиями героев проекта.\n\n«РБК Визионеры» получили офлайн-измерение, а\u00A0РБК укрепил позицию медиабренда как точки сборки прогрессивной аудитории вокруг будущего бизнеса, технологий и\u00A0культуры.\n\nСтарт развития сообщества для\u00A0визионеров как отдельного продукта, создание событий внутри этого сообщества',
+    ru: 'Двухдневная публичная программа с\u00A0лекциями и\u00A0открытыми дискуссиями героев проекта\n\n«РБК Визионеры» получили офлайн-измерение, а\u00A0РБК укрепил позицию медиабренда как точки сборки прогрессивной аудитории вокруг будущего бизнеса, технологий и\u00A0культуры\n\nСтарт развития сообщества для\u00A0визионеров как отдельного продукта, создание событий внутри этого сообщества',
     en: '2-Day Track: Curated lectures and panels with key project visionaries \n\nCultural Hub: Turned media into a\u00A0high-impact physical event, positioning RBK as a\u00A0tech and business community center\n\nCommunity Launch: Built a\u00A0proprietary visionaries network with exclusive, closed-loop experiences',
   },
   team: [
@@ -60,10 +60,10 @@ export const rbcVisionariesPublic: Project = {
       },
     },
   ],
-  partners: [
-    { logo: '/logos/skolkovo.svg', name: 'Сколково', url: 'https://www.skolkovo.ru', width: 92, height: 70 },
-    { logo: '/logos/arhstoyanie.svg', name: 'Архстояние', url: 'https://arch.stoyanie.ru', width: 139, height: 33 },
-  ],
+  // partners: [
+  //   { logo: '/logos/skolkovo.svg', name: 'Сколково', url: 'https://www.skolkovo.ru', width: 92, height: 70 },
+  //   { logo: '/logos/arhstoyanie.svg', name: 'Архстояние', url: 'https://arch.stoyanie.ru', width: 139, height: 33 },
+  // ],
   gallery: [
     { src: '/projects/rbc-visionaries-public/1.jpg', credit: { ru: 'фото: Николай\u00A0Зверков', en: 'ph: Nikolay\u00A0Zverkov' } },
     { src: '/projects/rbc-visionaries-public/2.jpg', credit: { ru: 'фото: Сергей\u00A0Бойко', en: 'ph: Sergey\u00A0Boyko' } },

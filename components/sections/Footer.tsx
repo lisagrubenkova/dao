@@ -20,6 +20,24 @@ export function Footer() {
     { key: 'contacts', label: t('nav.contacts'), href: '#contact' },
   ];
 
+  const legalLines =
+  locale === 'en'
+    ? [
+        'Individual Entrepreneur Iuliia Yuryevna Gerasimenko',
+        'Taxpayer Identification Number (INN): 526017711095',
+        'Primary State Registration Number (OGRN): 325527500004712',
+        'Address: Apt. 134B, Bldg. 3, 3 Piskunova St., Nizhny Novgorod, Russia',
+        '+7 985 058 1797',
+        'gerasimenkoiuliia@gmail.com',
+      ]
+    : [
+        'ИП Герасименко Юлия Юрьевна',
+        'ИНН 526017711095',
+        'ОГРН 325527500004712',
+        'Адрес г Нижний Новгород, ул. Пискунова, д 3, к 3, кв 134Б',
+        '+7 985 058 1797',
+        'gerasimenkoiuliia@gmail.com',
+      ];
   return (
     <footer className="bg-bg-alt py-8 px-4 md:py-section-y md:px-section-x">
       <div className="grid grid-cols-12 gap-3 md:gap-gap-lg">
@@ -99,22 +117,15 @@ export function Footer() {
               </a>
             </div>
           ))}
-
-          <div className="flex justify-end items-end">
-          <p className="font-mono text-[8px] leading-[1.6] md:text-[20px] md:leading-relaxed text-muted">
-            ИП Герасименко Юлия Юрьевна
-            <br />
-            ИНН 526017711095
-            <br />
-            ОГРН 325527500004712
-            <br />
-            Адрес г Нижний Новгород, ул. Пискунова, д 3, к 3, кв 134Б
-            <br />
-            +7 985 058 1797
-            <br />
-            gerasimenkoiuliia@gmail.com
-          </p>
-        </div>
+<div className="col-span-3 flex md:col-span-1 md:justify-end md:items-end mt-2 md:mt-0">
+  <p className="font-mono text-[12px] leading-[1.5] md:text-[20px] md:leading-relaxed text-muted md:text-left">
+    {legalLines.map((line, i) => (
+      <span key={i} className="block">
+        {line}
+      </span>
+    ))}
+  </p>
+</div>
         </div>
       </div>
     </footer>

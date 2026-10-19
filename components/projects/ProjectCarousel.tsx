@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
@@ -31,6 +31,25 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
+  // Высота фото карточки: по ней центруем стрелки
+  const mediaRef = useRef<HTMLDivElement | null>(null);
+  const [mediaH, setMediaH] = useState<number | null>(null);
+
+  useEffect(() => {
+    const el = mediaRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(([entry]) => {
+      setMediaH(entry.contentRect.height);
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [projects.length]);
+
+  const arrowBoxStyle: React.CSSProperties = {
+    height: mediaH ?? undefined,
+    visibility: mediaH ? 'visible' : 'hidden',
+  };
+
   const handleView = (id: string) => {
     onSelect(id);
     requestAnimationFrame(() => {
@@ -44,18 +63,13 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
 
   return (
     <div className="carousel-wrap relative flex items-start">
-      <div
-        className="flex"
-        style={{
-          marginTop: `calc((100vw / var(--cards-visible)) * 4 / 3 / 2)`,
-        }}
-      >
+      <div className="flex items-center shrink-0" style={arrowBoxStyle}>
         <GlassArrow direction="left" place="carousel" onClick={scrollPrev} />
       </div>
 
       <div ref={emblaRef} className="overflow-hidden flex-1 min-w-0">
         <div className="flex">
-          {projects.map((p) => (
+          {projects.map((p, i) => (
             <div
               key={p.id}
               className="shrink-0"
@@ -68,7 +82,10 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
                 onClick={() => onSelect(p.id)}
                 className="text-left flex flex-col cursor-default"
               >
-                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-neutral-100">
+                <div
+                  ref={i === 0 ? mediaRef : undefined}
+                  className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-neutral-100"
+                >
                   <Image
                     src={p.thumbnail}
                     alt={p.title[locale]}
@@ -122,12 +139,7 @@ export function ProjectCarousel({ projects, activeId, onSelect }: Props) {
         </div>
       </div>
 
-      <div
-        className="flex"
-        style={{
-          marginTop: `calc((100vw / var(--cards-visible)) * 4 / 3 / 2)`,
-        }}
-      >
+      <div className="flex items-center shrink-0" style={arrowBoxStyle}>
         <GlassArrow direction="right" place="carousel" onClick={scrollNext} />
       </div>
     </div>

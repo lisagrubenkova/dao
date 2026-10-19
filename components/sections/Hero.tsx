@@ -39,7 +39,8 @@ export function Hero() {
 
   const isIntro = phase === 'intro';
   const isEn = locale === 'en';
-  const logoTransition = { duration: 1.1, ease: [0.22, 1, 0.36, 1] as const };
+  const logoTransition = { duration: 2.5, ease: [0.25, 0.1, 0.75, 0.9] as const };
+  const afterLogo = logoTransition.duration - 0.2;
 
   // Пропорции локалей разные: ru 1345×400, en 1106×605.
   // Ширины подобраны так, чтобы высота логотипа совпадала в обеих версиях.
@@ -85,7 +86,6 @@ export function Hero() {
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
-              aria-label={tMenu('openMenu')}
               className="md:hidden absolute left-0 top-1/2 -translate-y-1/2 flex flex-col gap-1 p-1"
             >
               <span className="block w-8 h-[2px] bg-ink" />
@@ -104,7 +104,7 @@ export function Hero() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.7, delay: 0.6, ease: 'easeOut' }}
+              transition={{ duration: 0.7, delay: afterLogo, ease: 'easeOut' }}
               className="absolute right-0 top-1/2 md:top-0 -translate-y-1/2"
             >
               <LanguageSwitcher />
@@ -116,7 +116,7 @@ export function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.4, ease: 'easeOut' }}
+              transition={{ duration: 0.7, delay: afterLogo, ease: 'easeOut' }}
               className="flex flex-col items-center text-center w-full mx-auto"
             >
               <h1 className="text-hero font-sans font-medium lowercase text-center text-balance whitespace-pre-line">
@@ -137,7 +137,7 @@ export function Hero() {
           <motion.nav
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.6, ease: 'easeOut' }}
+            transition={{ duration: 0.7, delay: afterLogo, ease: 'easeOut' }}
             className="hidden md:flex items-end justify-center gap-[clamp(32px,5vw,96px)]"
           >
             {menuItems.map((item) => (

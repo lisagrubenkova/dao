@@ -10,16 +10,16 @@ export const moscowStartupSummit: Project = {
     ru: 'Moscow Start up Summit',
     en: 'Moscow Start up Summit',
   },
-  partnerLogo: [{ 
-    src:'/logos/sber.svg',
-    width: 250,
-    height: 68
-  }],
-  partnerLogoEn: [{
-    src:'/logos/sber-en.svg',
-    width: 349,
-    height: 186
-  }],
+  // partnerLogo: [{ 
+  //   src:'/logos/sber.svg',
+  //   width: 250,
+  //   height: 68
+  // }],
+  // partnerLogoEn: [{
+  //   src:'/logos/sber-en.svg',
+  //   width: 349,
+  //   height: 186
+  // }],
   description: {
     ru: 'Международный саммит, посвящённый технологическому предпринимательству, венчурным инвестициям и\u00A0инновациям',
     en: 'An international summit dedicated to\u00A0technology entrepreneurship, venture capital investments and innovation',
@@ -58,7 +58,7 @@ export const moscowStartupSummit: Project = {
     en: 'Benchmark Showcase: Position the\u00A0summit as a\u00A0leading venture ecosystem event\n\nValue-Driven: Focused on\u00A0networking, experimentation, and real business outcomes',
   },
   result: {
-    ru: 'Архитектура деловой программы для\u00A0пяти треков и\u00A0разных аудиторий.\n\nФорматы обратных презентаций корпораций, организация деловых встреч "молодая компания\u00A0- корпорация\u00A0- инвестор ", конвертирующий новые деловые связи в\u00A0пилоты',
+    ru: 'Архитектура деловой программы для\u00A0пяти треков и\u00A0разных аудиторий\n\nФорматы обратных презентаций корпораций, организация деловых встреч "молодая компания\u00A0- корпорация\u00A0- инвестор ", конвертирующий новые деловые связи в\u00A0пилоты',
     en: '5-Track Framework: Corporate reverse pitches and matchmaking to\u00A0drive commercial pilots',
   },
   gallery: [
@@ -68,11 +68,11 @@ export const moscowStartupSummit: Project = {
     { src: '/projects/moscow-startup-summit/4.jpg', credit: {ru: '', en: "ph: dao team"} },
     { src: '/projects/moscow-startup-summit/5.jpg', credit: {ru: '', en: "ph: dao team"} },
   ],
-  partners: [
-    { logo: '/logos/gero.svg', name: 'gero', url: '', width: 221, height: 55 },
-    { logo: '/logos/fra.svg', name: 'FRA', url: '', width: 313, height: 127 },
-    { logo: '/logos/biodata.svg', name: 'biodata', url: '', width: 151, height: 151 },
-    { logo: '/logos/squirrelAI.svg', name: 'SquirrelAI', url: '', width: 213, height: 213 },
-    { logo: '/logos/MIT.svg', name: 'MIT', url: '', width: 142, height: 142 },
-  ]
+  // partners: [
+  //   { logo: '/logos/gero.svg', name: 'gero', url: '', width: 221, height: 55 },
+  //   { logo: '/logos/fra.svg', name: 'FRA', url: '', width: 313, height: 127 },
+  //   { logo: '/logos/biodata.svg', name: 'biodata', url: '', width: 151, height: 151 },
+  //   { logo: '/logos/squirrelAI.svg', name: 'SquirrelAI', url: '', width: 213, height: 213 },
+  //   { logo: '/logos/MIT.svg', name: 'MIT', url: '', width: 142, height: 142 },
+  // ]
 };
