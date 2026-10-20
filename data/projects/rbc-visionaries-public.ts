@@ -56,7 +56,7 @@ export const rbcVisionariesPublic: Project = {
       name: { ru: 'Юлия\u00A0Бычкова', en: 'Yulia\u00A0Bychkova' },
       role: {
         ru: 'продюсер фестиваля современного искусства и\u00A0архитектуры «Архстояние», крупнейшего в\u00A0Европе',
-        en: 'the\u00A0producer of the\u00A0Archstoyanie land art festival, the\u00A0largest in\u00A0Europe.',
+        en: 'the\u00A0producer of the\u00A0Archstoyanie land art festival, the\u00A0largest in\u00A0Europe',
       },
     },
   ],
