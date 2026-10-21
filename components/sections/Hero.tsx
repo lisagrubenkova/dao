@@ -39,7 +39,7 @@ export function Hero() {
 
   const isIntro = phase === 'intro';
   const isEn = locale === 'en';
-  const logoTransition = { duration: 1.8, ease: [0.25, 0.1, 0.75, 0.9] as const };
+  const logoTransition = { duration: 1.3, ease: [0.25, 0.1, 0.75, 0.9] as const };
   const afterLogo = logoTransition.duration - 0.2;
 
   // Пропорции локалей разные: ru 1345×400, en 1106×605.
