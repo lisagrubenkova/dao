@@ -13,7 +13,7 @@ import { LanguageSwitcher } from '../ui/LanguageSwitcher';
 export function Hero() {
   const t = useTranslations('hero');
   const tMenu = useTranslations('menu');
-  const subtitle = t('subtitle');
+  const tags = t.has('tags') ? (t.raw('tags') as string[]) : [];
   const locale = useLocale();
 
   const { setIntroDone } = useIntro();
@@ -122,13 +122,30 @@ export function Hero() {
               <h1 className="text-hero font-sans font-medium lowercase text-center text-balance whitespace-pre-line">
                 {t('title')}
               </h1>
-              {subtitle && (
-                <p
-                  className="font-mono text-center max-w-3xl mx-auto mt-[clamp(12px,1.81vw,40px)]"
+             {tags.length > 0 && (
+                <div
+                  className="font-mono flex flex-col items-center gap-y-[0.35em] mt-[clamp(12px,1.81vw,40px)]"
                   style={{ fontSize: 'min(clamp(11px, 2.2vw, 40px), 4vh)' }}
                 >
-                  {subtitle}
-                </p>
+                  {Array.from({ length: Math.ceil(tags.length / 2) }, (_, i) =>
+                    tags.slice(i * 2, i * 2 + 2)
+                  ).map((row, i) => (
+                    <ul
+                      key={i}
+                      className="flex flex-wrap justify-center gap-x-[2.5em] gap-y-[0.35em]"
+                    >
+                      {row.map((tag) => (
+                        <li key={tag} className="flex items-center gap-[0.6em] whitespace-nowrap">
+                          <span
+                            aria-hidden
+                            className="shrink-0 w-[0.22em] h-[0.22em] rounded-full bg-current"
+                          />
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                  ))}
+                </div>
               )}
             </motion.div>
           </div>

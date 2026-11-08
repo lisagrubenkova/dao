@@ -1,7 +1,12 @@
 {
   "hero": {
     "title": "curated events",
-    "subtitle": "dao creates thoughtful brand experiences\u00A0— from summits to\u00A0private dinners"
+    "tags": [
+    "global summits",
+    "industry forums",
+    "cultural encounters",
+    "curated conversations"
+  ]
   },
   "menu": {
     "about": "about",
